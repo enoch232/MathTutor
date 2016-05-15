@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :lessons
   resources :topics
   resources :announcements
-  resources :homeworks
+  resources :assignments
   root to: 'homes#index'
 end

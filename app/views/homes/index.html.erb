@@ -2,14 +2,14 @@
 	<div class = "home-introduction">
 	</div>
 	<div class = "list-container">
-		<div class = "homework-list">
-			<%= link_to "New Assignment", new_homework_path %>
+		<div class = "assignment-list">
+			<%= link_to "New Assignment", new_assignment_path %>
 			<br />
 			<div>
-				Recent Homework
+				Recent Assignments
 			</div>
-			<% @homeworks.each do |homework| %>
-			<%= homework.title %> due: <%= homework.duedate %>
+			<% @assignments.each do |assignment| %>
+			<%= assignment.title %> due: <%= assignment.duedate %>
 			<br />
 			<% end %>
 		</div>

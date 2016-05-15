@@ -19,7 +19,7 @@
 	background-color: green;
 	margin: 0 auto;
 }
-.homework-list, .topic-list, .announcement-list{
+.assignment-list, .topic-list, .announcement-list{
 	display:inline-block;
 	margin:2rem;
 	height:400px;

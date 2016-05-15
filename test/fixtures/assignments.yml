@@ -2,10 +2,10 @@
 
 one:
   title: MyString
-  duedate: MyString
   description: MyText
+  duedate: MyString
 
 two:
   title: MyString
-  duedate: MyString
   description: MyText
+  duedate: MyString
