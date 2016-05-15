@@ -1,2 +1,18 @@
-<h1>Announcements#new</h1>
-<p>Find me in app/views/announcements/new.html.erb</p>
+<div>
+	<div>
+		<h1>New Announcement</h1>
+	</div>
+	<div style = "text-align:center">
+		<%= form_for(:announcement, url: announcements_path) do |f| %>
+		<%= f.label "Title" %>
+		<br />
+		<%= f.text_field :title %>
+		<br />
+		<%= f.label "Description" %>
+		<br />
+		<%= f.text_area :description %>
+		<br />
+		<%= f.submit "Post" %>
+		<% end %>
+	</div>
+</div>
