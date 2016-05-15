@@ -1,0 +1,16 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.home-introduction{
+	width:95%;
+	height:400px;
+	background-color: green;
+	margin: 0 auto;
+}
+.assignment-list, .topic-list, .announcement-list{
+	display:inline-block;
+	margin:2rem;
+	height:400px;
+	width:28%;
+	background-color:green;
+
+}
