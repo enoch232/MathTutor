@@ -1,0 +1,17 @@
+<div>
+	<div>
+		<h1>New Homework Assignment</h1>
+	</div>
+	<div>
+		<%= form_for(:homework, url: homework_index) do |f| %>
+		<%= f.label "Title" %>
+		<%= f.textfield :title %>
+		<%= f.label "Description" %>
+		<%= f.textarea :description %>
+		<%= f.label "Due Date" %>
+		<%= f.textfield :duedate %>
+		<%= f.submit "Post new homework" %>
+		<% end %>
+
+	</div>
+</div>

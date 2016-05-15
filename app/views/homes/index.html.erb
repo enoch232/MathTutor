@@ -1,0 +1,16 @@
+<div class = "home-index-container">
+	<div class = "home-introduction">
+	</div>
+	<div class = "list-container">
+		<div class = "homework-list">
+			<%= link_to "New Assignment", new_homework_path %>
+			<% @homeworks.each do |homework| %>
+			<%= homework.title %>:(due: <%= homework.duedate %>)
+			<% end %>
+		</div>
+		<div class = "class-list">
+		</div>
+		<div class = "announcement-list">
+		</div>
+	</div>
+</div>

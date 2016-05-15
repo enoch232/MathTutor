@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+.home-introduction{
+	width:95%;
+	height:400px;
+	background-color: green;
+	margin: 0 auto;
+}
+.homework-list, .class-list, .announcement-list{
+	display:inline-block;
+	margin:2rem;
+	height:400px;
+	width:28%;
+	background-color:green;
+
+}
