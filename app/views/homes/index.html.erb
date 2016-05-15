@@ -4,8 +4,13 @@
 	<div class = "list-container">
 		<div class = "homework-list">
 			<%= link_to "New Assignment", new_homework_path %>
+			<br />
+			<div>
+				Recent Homework
+			</div>
 			<% @homeworks.each do |homework| %>
 			<%= homework.title %>:(due: <%= homework.duedate %>)
+			<br />
 			<% end %>
 		</div>
 		<div class = "class-list">
