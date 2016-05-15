@@ -9,13 +9,31 @@
 				Recent Homework
 			</div>
 			<% @homeworks.each do |homework| %>
-			<%= homework.title %>:(due: <%= homework.duedate %>)
+			<%= homework.title %> due: <%= homework.duedate %>
 			<br />
 			<% end %>
 		</div>
-		<div class = "class-list">
+		<div class = "topic-list">
+			<%= link_to "New Topic", new_topic_path %>
+			<br />
+			<div>
+				Topics
+			</div>
+			<% @topics.each do |topic| %>
+			<%= topic.title %> due: <%= topic.duedate %>
+			<br />
+			<% end %>
 		</div>
 		<div class = "announcement-list">
+			<%= link_to "New Announcement", new_announcement_path %>
+			<br />
+			<div>
+				Recent announcements
+			</div>
+			<% @announcements.each do |announcement| %>
+			<%= announcement.title %> due: <%= announcement.duedate %>
+			<br />
+			<% end %>
 		</div>
 	</div>
 </div>
