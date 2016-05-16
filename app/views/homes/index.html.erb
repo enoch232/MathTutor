@@ -38,7 +38,11 @@
 			<div style = "overflow:auto;">
 				<% @assignments.each do |assignment| %>
 				<div class = "assignment">
-					<span style = "margin-left:1rem"><%= assignment.title.capitalize %></span>
+					<span style = "margin-left:0.5rem"><%= assignment.title.capitalize %></span>
+					<br />
+					<span style = "margin-left:0.5rem"><%= assignment.description.capitalize %></span>
+					<br />
+					<span style = "margin-left:0.5rem">Due: <%= assignment.duedate %></span>
 				</div>
 				<br />
 				<% end %>
