@@ -5,13 +5,47 @@
 		</div>
 	</div>
 	<div class = "list-container">
-		<div class = "assignment-list">
-		</div>
 		<div class = "topic-list">
+			<div style = "text-align:center">
+				<h1>Topics</h1>
+			</div>
+			<div style = "overflow:auto">
+				<% @topics.each do |topic| %>
+				<div class = "topic">
+					<span style = "margin-left:1rem"><%= topic.title.capitalize %></span>
+				</div>
+				<br />
+				<% end %>
+			</div>
 		</div>
 		<div class = "announcement-list">
+			<div style = "text-align:center">
+				<h1>Announcements</h1>
+			</div>
+			<div style = "overflow:auto;">
+				<% @announcements.each do |announcement| %>
+				<div class = "announcement">
+					<span style = "margin-left:1rem"><%= announcement.title.capitalize %></span>
+				</div>
+				<br />
+				<% end %>
+			</div>
+		</div>
+		<div class = "assignment-list">
+			<div style = "text-align:center">
+				<h1>Assignments</h1>
+			</div>
+			<div style = "overflow:auto;">
+				<% @assignments.each do |assignment| %>
+				<div class = "assignment">
+					<span style = "margin-left:1rem"><%= assignment.title.capitalize %></span>
+				</div>
+				<br />
+				<% end %>
+			</div>
 
 		</div>
+		
 		<div style = "clear:both">
 		</div>
 	</div>
