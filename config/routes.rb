@@ -6,9 +6,8 @@ Rails.application.routes.draw do
   resources :announcements
   resources :assignments
   root to: 'homes#index'
-  get '/sign_in' => 'devise/sessions#new'
-  get '/sign_up' => 'devise/registrations#new'
-  devise_scope :user do get "/some/route" => "some_devise_controller" end
+  devise_scope :user do get "/sign_in" => "devise/sessions#new" end
+  devise_scope :user do get "/sign_up" => "devise/registrations#new" end
   get '/about' => 'homes#about'
   get '/contact' => 'homes#contact'
 

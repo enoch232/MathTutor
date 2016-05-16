@@ -1,4 +1,5 @@
 class AnnouncementsController < ApplicationController
+  before_action :announcement_find, only: [:show, :destroy]
   def index
   end
 
@@ -16,6 +17,8 @@ class AnnouncementsController < ApplicationController
   end
 
   def destroy
+    @announcement.destroy
+    redirect_to root_path
   end
 
   def show
@@ -24,5 +27,7 @@ class AnnouncementsController < ApplicationController
   def announcement_params
     params.require(:announcement).permit(:title, :description)
   end
-
+  def announcement_find
+    @announcement = Announcement.find(params[:id])
+  end
 end

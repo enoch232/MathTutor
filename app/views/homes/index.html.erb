@@ -11,10 +11,12 @@
 			</div>
 			<div style = "overflow:auto">
 				<% @topics.each do |topic| %>
+				<%= link_to topic_path(topic) do %>
 				<div class = "topic">
 					<span style = "margin-left:1rem"><%= topic.title.capitalize %></span>
 				</div>
 				<br />
+				<% end %>
 				<% end %>
 			</div>
 		</div>
@@ -24,10 +26,12 @@
 			</div>
 			<div style = "overflow:auto;">
 				<% @announcements.each do |announcement| %>
+				<%= link_to announcement_path(announcement) do %>
 				<div class = "announcement">
 					<span style = "margin-left:1rem"><%= announcement.title.capitalize %></span>
 				</div>
 				<br />
+				<% end %>
 				<% end %>
 			</div>
 		</div>
@@ -37,6 +41,7 @@
 			</div>
 			<div style = "overflow:auto;">
 				<% @assignments.each do |assignment| %>
+				<%= link_to assignment_path(assignment) do %>
 				<div class = "assignment">
 					<span style = "margin-left:0.5rem"><%= assignment.title.capitalize %></span>
 					<br />
@@ -46,10 +51,10 @@
 				</div>
 				<br />
 				<% end %>
+				<% end %>
 			</div>
 
 		</div>
-		
 		<div style = "clear:both">
 		</div>
 	</div>

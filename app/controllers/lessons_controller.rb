@@ -1,4 +1,5 @@
 class LessonsController < ApplicationController
+  before_action :lesson_find, only: [:show, :destroy]
   def index
   end
 
@@ -16,6 +17,8 @@ class LessonsController < ApplicationController
   end
 
   def destroy
+    @lesson.destroy
+    redirect_to root_path
   end
 
   def show
@@ -24,5 +27,8 @@ class LessonsController < ApplicationController
   def lesson_params
     params.require(:lesson).permit(:title, :description)
   end
+  def lesson_find
+    @lesson = Lesson.find(params[:id])
+  end 
 
 end

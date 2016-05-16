@@ -1,4 +1,5 @@
 class TopicsController < ApplicationController
+  before_action :topic_find, only: [:show, :destroy]
   def index
     @topics = Topic.all
   end
@@ -19,9 +20,14 @@ class TopicsController < ApplicationController
   end
 
   def destroy
+    @topic.destroy
+    redirect_to root_path
   end
   private
   def topic_params
     params.require(:topic).permit(:title, :description)
+  end
+  def topic_find
+    @topic = Topic.find(params[:id])
   end
 end
