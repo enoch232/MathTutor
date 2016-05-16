@@ -22,6 +22,6 @@ class TopicsController < ApplicationController
   end
   private
   def topic_params
-    params.require(:assignments).permit(:title, :description)
+    params.require(:topic).permit(:title, :description)
   end
 end

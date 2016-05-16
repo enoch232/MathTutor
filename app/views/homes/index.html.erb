@@ -1,5 +1,8 @@
 <div class = "home-index-container">
 	<div class = "home-introduction">
+		<div>
+			Caraousal
+		</div>
 	</div>
 	<div class = "list-container">
 		<div class = "assignment-list">
@@ -20,7 +23,7 @@
 				Topics
 			</div>
 			<% @topics.each do |topic| %>
-			<%= topic.title %> due: <%= topic.duedate %>
+			<%= topic.title %>
 			<br />
 			<% end %>
 		</div>
@@ -31,7 +34,7 @@
 				Recent Announcements
 			</div>
 			<% @announcements.each do |announcement| %>
-			<%= announcement.title %> due: <%= announcement.duedate %>
+			<%= announcement.title %>
 			<br />
 			<% end %>
 		</div>
