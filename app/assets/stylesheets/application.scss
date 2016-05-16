@@ -1,16 +1,51 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+$red: #e85a71;
+$lightblue: #d8e9ef;
+$blue: #4ea1d3;
+$black: #454552;
+*{
+	box-sizing:border-box;
+}
 .home-introduction{
 	width:95%;
 	height:400px;
-	background-color: green;
+	background-color: $lightblue;
 	margin: 0 auto;
+}
+.navigation{
+	background-color:$blue;
+	height:11rem;
+	width:100%;
+}
+.list-container{
+	margin:0 auto;
 }
 .assignment-list, .topic-list, .announcement-list{
 	display:inline-block;
-	margin:2rem;
 	height:400px;
-	width:28%;
-	background-color:green;
+	width:30%;
+	float:left;
+	margin:3rem 2rem;
+	background-color: $lightblue;
+}
+.navigation-brand{
+	display:inline-block;
+	font-size:3rem;
+	letter-spacing:2rem;
+	height:11rem;
+	padding-top:3rem;
+	padding-left:3rem;
 
+}
+.nav{
+	display:inline-block;
+	font-size:1.5rem;
+	float:right;
+	margin-right:2rem;
+	height:11rem;
+}
+.notification{
+	position:fixed;
+	top:0;
 }

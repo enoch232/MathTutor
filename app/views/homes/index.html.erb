@@ -1,42 +1,22 @@
 <div class = "home-index-container">
 	<div class = "home-introduction">
 		<div>
-			Caraousal
+			
 		</div>
 	</div>
 	<div class = "list-container">
 		<div class = "assignment-list">
-			<%= link_to "New Assignment", new_assignment_path, class: "btn btn-default" %>
-			<br />
-			<div>
-				Recent Assignments
-			</div>
-			<% @assignments.each do |assignment| %>
-			<%= assignment.title %> due: <%= assignment.duedate %>
-			<br />
-			<% end %>
 		</div>
 		<div class = "topic-list">
-			<%= link_to "New Topic", new_topic_path, class: "btn btn-default"  %>
-			<br />
-			<div>
-				Topics
-			</div>
-			<% @topics.each do |topic| %>
-			<%= topic.title %>
-			<br />
-			<% end %>
 		</div>
 		<div class = "announcement-list">
-			<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default"  %>
-			<br />
-			<div>
-				Recent Announcements
-			</div>
-			<% @announcements.each do |announcement| %>
-			<%= announcement.title %>
-			<br />
-			<% end %>
+
 		</div>
+		<div style = "clear:both">
+		</div>
+	</div>
+	<div>
+	</div>
+	<div class = "review-list">
 	</div>
 </div>
