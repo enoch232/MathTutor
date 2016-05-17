@@ -8,12 +8,14 @@
 				<div class = "topic-show-lesson-container-title">
 					Lessons
 				</div>
-				<div>
+				<div style = "text-align:center;margin:10px;">
 					<%= link_to "New Lesson", new_topic_lesson_path(topic_id: @topic.id), class: "btn btn-default" %>
 				</div>
 				<div class = "lesson-show-list">
 					<% @topic.lessons.each do |lesson| %>
-						<%= lesson.title %>
+						<%= link_to topic_lesson_path(lesson) do %>
+						<div class = "topic-lesson"><%= @topic.title.capitalize + ' - ' + lesson.title.capitalize %></div>
+						<% end %>
 					<% end %>
 				</div>
 			</div>
