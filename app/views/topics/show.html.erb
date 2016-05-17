@@ -8,10 +8,20 @@
 				<div class = "topic-show-lesson-container-title">
 					Lessons
 				</div>
+				<div>
+					<%= link_to "New Lesson", new_topic_lesson_path(topic_id: @topic.id), class: "btn btn-default" %>
+				</div>
+				<div class = "lesson-show-list">
+					<% @topic.lessons.each do |lesson| %>
+						<%= lesson.title %>
+					<% end %>
+				</div>
 			</div>
 			<div class = "topic-show-assignment-container">
 				<div class = "topic-show-assignment-container-title">
 					Assignments
+				</div>
+				<div class = "assignment-show-list">
 				</div>
 			</div>
 		</div>

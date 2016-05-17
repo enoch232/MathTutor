@@ -1,5 +1,5 @@
 class TopicsController < ApplicationController
-  before_action :topic_find, only: [:show, :destroy]
+  before_action :topic_find, only: [:show, :destroy, :create_lesson]
   def index
     @topics = Topic.all
   end
@@ -15,7 +15,6 @@ class TopicsController < ApplicationController
       render :new
     end
   end
-
   def show
   end
 
