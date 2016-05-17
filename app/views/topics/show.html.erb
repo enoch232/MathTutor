@@ -1,6 +1,20 @@
 <div>
-	<div>
-		<%= @topic.title %>
+	<div class = "topic-show-container">
+		<div class = "topic-show-title">
+			<%= @topic.title.capitalize %>
+		</div>
+		<div class = "topic-show-lesson-assignment-container">
+			<div class = "topic-show-lesson-container">
+				<div class = "topic-show-lesson-container-title">
+					Lessons
+				</div>
+			</div>
+			<div class = "topic-show-assignment-container">
+				<div class = "topic-show-assignment-container-title">
+					Assignments
+				</div>
+			</div>
+		</div>
 	</div>
 
 
