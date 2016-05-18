@@ -193,3 +193,27 @@ a{
 
 	}
 }
+.assignment-show-page{
+	margin:2rem auto;
+	width:80%;
+	background-color:$yellow;
+	.assignment-show-page-title{
+		font-size:3rem;
+		text-align:center;
+		height:10rem;
+		padding:3rem;
+	}
+	.assignment-show-page-description{
+		text-align:left;
+		font-size:1.8rem;
+		background-color:$lightblue;
+		min-height:500px;
+		padding:1rem 2rem;
+	}
+	.assignment-show-page-duedate{
+		text-align:center;
+		font-size:2.5rem;
+		border:8px solid black;
+	}
+
+}

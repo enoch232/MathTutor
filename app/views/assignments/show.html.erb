@@ -1,4 +1,10 @@
 <div>
-	<div>
+	<div class = "assignment-show-page">
+		<div class = "assignment-show-page-title"><%= @assignment.title %></div>
+		<div class = "assignment-show-page-description"><%= @assignment.description %></div>
+		<div class = "assignment-show-page-duedate">Due: <%= @assignment.duedate %></div>
+	</div>
+	<div style = "text-align:center;margin-bottom:2rem">
+		<%= link_to "Back", :back, class: "btn btn-default" %>
 	</div>
 </div>
