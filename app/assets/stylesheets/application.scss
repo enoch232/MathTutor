@@ -163,3 +163,29 @@ a{
 		padding:1rem;
 	}
 }
+.lesson-show-container{
+	width:90%;
+	background-color: $lightblue;
+	text-align:center;
+	margin:2rem auto;
+	.lesson-show-title{
+		font-size:3rem;
+		background-color: $red;
+		padding:3rem;
+	}
+	.lesson-show-description{
+		padding-top:1rem;
+		min-height:500px;
+		padding-left:2rem;
+		padding-right:2rem;
+	}
+}
+
+.lesson-assignment{
+	background-color: $yellow;
+	width:100%;
+	min-height:8rem;
+	.lesson-assignment-div{
+		background-color:white;
+	}
+}
