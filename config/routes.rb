@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :assignments
   resources :topics do
+    resources :assignments
     resources :lessons do
       resources :assignments
     end

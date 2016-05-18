@@ -24,6 +24,11 @@
 					Assignments
 				</div>
 				<div class = "assignment-show-list">
+					<% @topic.assignments.each do |assignment| %>
+					<div class = "topic-assignment">
+						<%= link_to assignment.title, topic_assignment_path(assignment, topic_id: @topic.id) %>
+					</div>
+					<% end %>
 				</div>
 			</div>
 		</div>
