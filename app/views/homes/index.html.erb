@@ -27,7 +27,7 @@
 			<div style = "text-align:center">
 				<h1>Announcements</h1>
 			</div>
-			<div style = "text-align:center">
+			<div style = "text-align:center;margin-bottom:1rem;">
 				<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default" %>
 			</div>
 			<div style = "overflow:auto;">
@@ -36,7 +36,6 @@
 				<div class = "announcement">
 					<span style = "margin-left:1rem"><%= announcement.title.capitalize %></span>
 				</div>
-				<br />
 				<% end %>
 				<% end %>
 			</div>
@@ -45,7 +44,7 @@
 			<div style = "text-align:center">
 				<h1>Assignments</h1>
 			</div>
-			<div style = "overflow:auto;">
+			<div>
 				<% @assignments.each do |assignment| %>
 				<%= link_to assignment_path(assignment) do %>
 				<div class = "assignment">
@@ -55,11 +54,9 @@
 					<br />
 					<span style = "margin-left:0.5rem">Due: <%= assignment.duedate %></span>
 				</div>
-				<br />
 				<% end %>
 				<% end %>
 			</div>
-
 		</div>
 		<div style = "clear:both">
 		</div>

@@ -8,7 +8,7 @@ class AssignmentsController < ApplicationController
     @assignment = Assignment.new
   end
   def create
-    @lesson = Lesson.find(params[lesson_id])
+    @lesson = Lesson.find(params[:lesson_id])
     @assignment = @lesson.assignments.new(assignment_params)
     if @assignment.save
       redirect_to root_path

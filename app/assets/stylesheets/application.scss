@@ -80,23 +80,24 @@ a{
 	color: $black;
 	height:100px;
 	width:90%;
-	margin:0 auto;
+	margin:1rem auto;
 	border:none;
 	border-radius:0.3rem;
 	box-shadow:1px 1px 1px $black;
 	font-size:1.8rem;
 }
 .assignment{
+	float:left;
+	display:inline-block;
 	box-shadow:1px 1px 1px $black;
 	color: $black;
 	background-color: $yellow;
-	width:45%;
-	height:100px;
+	width:44%;
+	height:85px;
 	font-size:1.5rem;
 	border:none;
 	border-radius:0.3rem;
-	margin:1rem 2rem;
-
+	margin:1rem 1rem;
 }
 .topic-show-container{
 	background-color:$lightblue;
@@ -187,5 +188,8 @@ a{
 	min-height:8rem;
 	.lesson-assignment-div{
 		background-color:white;
+		padding:1rem;
+		margin:0.5rem;
+
 	}
 }

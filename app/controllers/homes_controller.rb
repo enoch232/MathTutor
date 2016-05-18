@@ -1,8 +1,8 @@
 class HomesController < ApplicationController
 	before_action :authenticate_user!
 	def index
-	  @assignments = Assignment.all.limit(10)
+	  @assignments = Assignment.all.order("assignments.created_at desc").limit(6)
 	  @topics = Topic.all
-	  @announcements = Announcement.all.limit(10)
+	  @announcements = Announcement.all.order("announcements.updated_at desc").limit(2)
 	end
 end
