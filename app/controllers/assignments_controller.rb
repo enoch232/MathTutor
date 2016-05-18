@@ -12,7 +12,7 @@ class AssignmentsController < ApplicationController
     @assignment = @lesson.assignments.new(assignment_params)
     @assignment.topic_id = @lesson.topic_id
     if @assignment.save
-      redirect_to root_path
+      redirect_to @assignment
     else
       render :new
     end

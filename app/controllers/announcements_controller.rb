@@ -10,7 +10,7 @@ class AnnouncementsController < ApplicationController
   def create
     @announcement = Announcement.new(announcement_params)
     if @announcement.save
-      redirect_to root_path
+      redirect_to @announcement
     else 
       render :new
     end

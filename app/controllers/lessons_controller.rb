@@ -10,8 +10,9 @@ class LessonsController < ApplicationController
   def create
     @topic = Topic.find(params[:topic_id])
     @lesson = @topic.lessons.new(lesson_params)
+    @lesson.topic_id = @topic.id
     if @lesson.save
-      redirect_to root_path
+      redirect_to @lesson
     else 
       render :new
     end
