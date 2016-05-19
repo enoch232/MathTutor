@@ -5,6 +5,7 @@ $lightblue: #d8e9ef;
 $blue: #4ea1d3;
 $black: #454552;
 $yellow: #f9f6d7;
+$font: 'Roboto', sans-serifs;
 a{
 
 	color:$black;
@@ -15,7 +16,7 @@ a{
 }
 *{
 	box-sizing:border-box;
-	font-family: "Futura";
+	font-family: $font
 }
 .home-introduction{
 	width:100%;

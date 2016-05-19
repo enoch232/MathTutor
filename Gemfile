@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'mathjax-rails'
 gem "paperclip", "~> 5.0.0.beta1"
 gem 'paperclip-av-transcoder'
 #devise gem
