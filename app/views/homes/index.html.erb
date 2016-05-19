@@ -46,7 +46,7 @@
 			</div>
 			<div>
 				<% @assignments.each do |assignment| %>
-				<%= link_to assignment_path(assignment) do %>
+				<%= link_to topic_lesson_assignment_path(topic_id: assignment.topic_id, lesson_id: assignment.lesson_id, id: assignment.id) do %>
 				<div class = "assignment">
 					<span style = "margin-left:0.5rem"><%= assignment.title.capitalize %></span>
 					<br />

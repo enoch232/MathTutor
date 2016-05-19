@@ -12,7 +12,7 @@ class LessonsController < ApplicationController
     @lesson = @topic.lessons.new(lesson_params)
     @lesson.topic_id = @topic.id
     if @lesson.save
-      redirect_to @lesson
+      redirect_to @topic
     else 
       render :new
     end

@@ -3,7 +3,7 @@
 		<h1>New Topic</h1>
 	</div>
 	<div style = "text-align:center">
-		<%= form_for(:topic, url: topics_path) do |f| %>
+		<%= form_for(:topic, url: topics_path, topic_id: @topic.id) do |f| %>
 		<%= f.label "Title" %>
 		<br />
 		<%= f.text_field :title %>

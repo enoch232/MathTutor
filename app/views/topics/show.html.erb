@@ -13,7 +13,7 @@
 				</div>
 				<div class = "lesson-show-list">
 					<% @topic.lessons.each do |lesson| %>
-						<%= link_to topic_lesson_path(lesson) do %>
+						<%= link_to topic_lesson_path(topic_id: @topic.id, id: lesson.id) do %>
 						<div class = "topic-lesson"><%= @topic.title.capitalize + ' - ' + lesson.title.capitalize %></div>
 						<% end %>
 					<% end %>
