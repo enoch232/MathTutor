@@ -5,7 +5,7 @@
 		</div>
 		<div class = "topic-show-lesson-assignment-container">
 			<div class = "topic-show-lesson-container">
-				<div class = "topic-show-lesson-container-title">
+				<div class = "topic-show-lesson-container-title titles">
 					Lessons
 				</div>
 				<div style = "text-align:center;margin:10px;">
@@ -20,14 +20,16 @@
 				</div>
 			</div>
 			<div class = "topic-show-assignment-container">
-				<div class = "topic-show-assignment-container-title">
+				<div class = "topic-show-assignment-container-title titles">
 					Assignments
 				</div>
 				<div class = "assignment-show-list">
 					<% @topic.assignments.each do |assignment| %>
-					<div class = "topic-assignment">
-						<%= link_to assignment.title, topic_lesson_assignment_path(topic_id: @topic.id, lesson_id:assignment.lesson_id, id: assignment.id) %>
-					</div>
+						<%= link_to topic_lesson_assignment_path(topic_id: @topic.id, lesson_id:assignment.lesson_id, id: assignment.id) do %>
+							<div class = "topic-assignment">
+								<%= assignment.title %>
+							</div>
+						<% end %>
 					<% end %>
 				</div>
 			</div>
