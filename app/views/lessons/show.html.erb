@@ -16,7 +16,7 @@
 				</div>
 				<% @lesson.assignments.each do |assignment| %>
 				<div class = "lesson-assignment-div">
-					<%= assignment.title %>
+					<%= link_to assignment.title, topic_lesson_assignment_path(topic_id: @lesson.topic_id, lesson_id: @lesson.id,id: assignment.id) %>
 				</div>
 				<% end %>
 
