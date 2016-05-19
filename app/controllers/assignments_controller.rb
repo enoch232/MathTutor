@@ -1,4 +1,4 @@
-class AssignmentsController < ApplicationController
+ class AssignmentsController < ApplicationController
   before_action :assignment_find, only: [:show, :destroy]
   def index
     @assignments = Assignment.all
@@ -12,7 +12,7 @@ class AssignmentsController < ApplicationController
     @assignment = @lesson.assignments.new(assignment_params)
     @assignment.topic_id = @lesson.topic_id
     if @assignment.save
-      redirect_to @assignment
+      redirect_to topic_lesson_assignment_path(lesson_id: @lesson.id, topic_id: @assignment.topic_id, id: @assignment.id)
     else
       render :new
     end
