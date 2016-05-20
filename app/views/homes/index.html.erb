@@ -1,68 +1,69 @@
-<div class = "home-index-container">
-	<div class = "home-introduction">
-		<div>
-			
-		</div>
-	</div>
-	<div class = "list-container">
-		<div class = "topic-list">
-			<div style = "text-align:center">
-				<h1>Topics</h1>
-			</div>
-			<div style = "text-align:center">
-				<%= link_to "New Topic", new_topic_path, class: "btn btn-default" %>
-			</div>
-			<br />
-			<div style = "overflow:auto">
-				<% @topics.each do |topic| %>
-				<%= link_to topic_path(topic) do %>
-				<div class = "topic">
-					<span style = "margin-left:1rem"><%= topic.title.capitalize %></span>
-				</div>
-				<% end %>
-				<% end %>
-			</div>
-		</div>
-		<div class = "announcement-list">
-			<div style = "text-align:center">
-				<h1>Announcements</h1>
-			</div>
-			<div style = "text-align:center;margin-bottom:1rem;">
-				<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default" %>
-			</div>
-			<div style = "overflow:auto;">
-				<% @announcements.each do |announcement| %>
-				<%= link_to announcement_path(announcement) do %>
-				<div class = "announcement">
-					<span style = "margin-left:1rem"><%= announcement.title.capitalize %></span>
-				</div>
-				<% end %>
-				<% end %>
-			</div>
-		</div>
-		<div class = "assignment-list">
-			<div style = "text-align:center">
-				<h1>Assignments</h1>
-			</div>
+
+	<div class = "home-index-container">
+		<div class = "home-introduction">
 			<div>
-				<% @assignments.each do |assignment| %>
-				<%= link_to topic_lesson_assignment_path(topic_id: assignment.topic_id, lesson_id: assignment.lesson_id, id: assignment.id) do %>
-				<div class = "assignment">
-					<span style = "margin-left:0.5rem;font-size:1.3rem"><%= assignment.title.capitalize %></span>
-					<br />
-					<span style = "margin-left:0.5rem;font-size:1rem"><%= assignment.description.capitalize %></span>
-					<br />
-					<span style = "margin-left:0.5rem">Due: <%= assignment.duedate %></span>
-				</div>
-				<% end %>
-				<% end %>
+
 			</div>
 		</div>
-		<div style = "clear:both">
+		<div class = "list-container">
+			<div class = "topic-list">
+				<div style = "text-align:center">
+					<h1>Topics</h1>
+				</div>
+				<div style = "text-align:center">
+					<%= link_to "New Topic", new_topic_path, class: "btn btn-default" %>
+				</div>
+				<br />
+				<div style = "overflow:auto">
+					<% @topics.each do |topic| %>
+					<%= link_to topic_path(topic) do %>
+					<div class = "topic">
+						<span style = "margin-left:1rem"><%= topic.title.capitalize %></span>
+					</div>
+					<% end %>
+					<% end %>
+				</div>
+			</div>
+			<div class = "announcement-list">
+				<div style = "text-align:center">
+					<h1>Announcements</h1>
+				</div>
+				<div style = "text-align:center;margin-bottom:1rem;">
+					<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default" %>
+				</div>
+				<div style = "overflow:auto;">
+					<% @announcements.each do |announcement| %>
+					<%= link_to announcement_path(announcement) do %>
+					<div class = "announcement">
+						<span style = "margin-left:1rem"><%= announcement.title.capitalize %></span>
+					</div>
+					<% end %>
+					<% end %>
+				</div>
+			</div>
+			<div class = "assignment-list">
+				<div style = "text-align:center">
+					<h1>Assignments</h1>
+				</div>
+				<div>
+					<% @assignments.each do |assignment| %>
+					<%= link_to topic_lesson_assignment_path(topic_id: assignment.topic_id, lesson_id: assignment.lesson_id, id: assignment.id) do %>
+					<div class = "assignment">
+						<span class = "assignment-title"><%= assignment.title.capitalize %></span>
+						<br />
+						<span class = "assignment-description"><%= assignment.description.capitalize %></span>
+						<br />
+						<span class = "assignment-duedate">Due: <%= assignment.duedate %></span>
+					</div>
+					<% end %>
+					<% end %>
+				</div>
+			</div>
+			<div style = "clear:both">
+			</div>
+		</div>
+		<div>
+		</div>
+		<div class = "review-list">
 		</div>
 	</div>
-	<div>
-	</div>
-	<div class = "review-list">
-	</div>
-</div>

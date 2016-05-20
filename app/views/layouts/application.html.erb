@@ -6,37 +6,39 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1" />
   <%= mathjax_tag %>
 </head>
 
 <body>
-  <% if notice || alert %>
-  <div class = "notification">
-  	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-  </div>
-  <% end %>
-  <div class = "navigation" style = "">
-    <div class = "navigation-brand">
-      <%= link_to "KoTutor", root_path, style: "text-decoration:none" %>
-    </div>
-    <div class = "nav">
-      <%= link_to "CONTACT", contact_path, style: "text-decoration:none" %>
-    </div>
-    <div class = "nav">
-      <%= link_to "ABOUT", about_path, style: "text-decoration:none" %>
-    </div>
-    <div class = "nav">
-      <%= link_to "SIGN UP", sign_up_path, style: "text-decoration:none" %>
-    </div>
-    <div class = "nav">
-      <%= link_to "SIGN IN", sign_in_path, style: "text-decoration:none" %>
-    </div>
-  </div>
-  <%= yield %>
-  <div class = "footer">
 
-  </div>
+    <% if notice || alert %>
+    <div class = "notification">
+    	<p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+    <% end %>
+    <div class = "navigation" style = "">
+      <div class = "navigation-brand">
+        <%= link_to "KoTutor", root_path, style: "text-decoration:none" %>
+      </div>
+      <div class = "nav">
+        <%= link_to "CONTACT", contact_path, style: "text-decoration:none" %>
+      </div>
+      <div class = "nav">
+        <%= link_to "ABOUT", about_path, style: "text-decoration:none" %>
+      </div>
+      <div class = "nav">
+        <%= link_to "SIGN UP", sign_up_path, style: "text-decoration:none" %>
+      </div>
+      <div class = "nav">
+        <%= link_to "SIGN IN", sign_in_path, style: "text-decoration:none" %>
+      </div>
+    </div>
+    <%= yield %>
+    <div class = "footer">
+
+    </div>
   <script>
   $(document).ready(function(){
     setTimeout(function(){
@@ -46,5 +48,6 @@
 
 
   </script>
+
 </body>
 </html>
