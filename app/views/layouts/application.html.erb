@@ -30,7 +30,7 @@
       </div>
       <% if current_user %>
       <div class = "nav">
-        <%= link_to "SIGN OUT", method: :destroy, style: "text-decoration:none" %>
+        <%= link_to "SIGN OUT", destroy_user_session_path, method: :delete, style: "text-decoration:none" %>
       </div>
       <% else %>
       <div class = "nav">
