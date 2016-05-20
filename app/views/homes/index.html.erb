@@ -10,9 +10,11 @@
 				<div style = "text-align:center">
 					<h1>Topics</h1>
 				</div>
+				<% if current_user.email == "k5m1nster@gmail.com" %>
 				<div style = "text-align:center">
 					<%= link_to "New Topic", new_topic_path, class: "btn btn-default" %>
 				</div>
+				<% end %>
 				<br />
 				<div style = "overflow:auto">
 					<% @topics.each do |topic| %>
@@ -28,9 +30,11 @@
 				<div style = "text-align:center">
 					<h1>Announcements</h1>
 				</div>
+				<% if current_user.email == "k5m1nster@gmail.com" %>
 				<div style = "text-align:center;margin-bottom:1rem;">
 					<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default" %>
 				</div>
+				<% end %>
 				<div style = "overflow:auto;">
 					<% @announcements.each do |announcement| %>
 					<%= link_to announcement_path(announcement) do %>
