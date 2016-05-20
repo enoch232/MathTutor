@@ -61,41 +61,49 @@ a{
 		}
 		
 	}
-	.topic-show-lesson-container{
-		box-shadow: 2px 2px 2px black;
-		width:43%;
-		height:400px;
-		background-color: $yellow;
-		display:inline-block;
-		float:left;
-		margin-left:50px;
-		border-radius:0.7rem;
-		.topic-show-lesson-container-title{
-			font-size:2.5rem;
-			background-color:$blue;
+	.topic-show-container{
+		background-color:$lightblue;
+		margin:0 auto;
+		width:90%;
+		height:580px;
+		margin-top:20px;
+		.topic-show-lesson-container{
+			box-shadow: 2px 2px 2px black;
+			width:43%;
+			height:400px;
+			background-color: $yellow;
+			display:inline-block;
+			float:left;
+			margin-left:50px;
 			border-radius:0.7rem;
-			text-align:center;
-			height:5rem;
-			padding:1rem;
+			.topic-show-lesson-container-title{
+				font-size:2.5rem;
+				background-color:$blue;
+				border-radius:0.7rem;
+				text-align:center;
+				height:5rem;
+				padding:1rem;
+			}
 		}
-	}
-	.topic-show-assignment-container{
-		box-shadow: 2px 2px 2px black;
-		width:43%;
-		height:400px;
-		background-color: $yellow;
-		display:inline-block;
-		float:right;
-		border-radius:0.7rem;
-		margin-right:50px;
-		.topic-show-assignment-container-title{
-			font-size:2.5rem;
-			background-color:$blue;
+		.topic-show-assignment-container{
+			box-shadow: 2px 2px 2px black;
+			width:43%;
+			height:400px;
+			background-color: $yellow;
+			display:inline-block;
+			float:right;
 			border-radius:0.7rem;
-			text-align:center;
-			height:5rem;
-			padding:1rem;
+			margin-right:50px;
+			.topic-show-assignment-container-title{
+				font-size:2.5rem;
+				background-color:$blue;
+				border-radius:0.7rem;
+				text-align:center;
+				height:5rem;
+				padding:1rem;
+			}
 		}
+		
 	}
 }
 @media (max-width:1199px) and (min-width:1000px){
@@ -131,42 +139,51 @@ a{
 		}
 		
 	}
-	.topic-show-lesson-container{
-		box-shadow: 2px 2px 2px black;
-		width:43%;
-		height:400px;
-		background-color: $yellow;
-		display:inline-block;
-		float:left;
-		margin-left:50px;
-		border-radius:0.7rem;
-		.topic-show-lesson-container-title{
-			font-size:2.5rem;
-			background-color:$blue;
+	.topic-show-container{
+		background-color:$lightblue;
+		margin:0 auto;
+		width:90%;
+		height:580px;
+		margin-top:20px;
+		.topic-show-lesson-container{
+			box-shadow: 2px 2px 2px black;
+			width:43%;
+			height:400px;
+			background-color: $yellow;
+			display:inline-block;
+			float:left;
+			margin-left:50px;
 			border-radius:0.7rem;
-			text-align:center;
-			height:5rem;
-			padding:1rem;
+			.topic-show-lesson-container-title{
+				font-size:2.5rem;
+				background-color:$blue;
+				border-radius:0.7rem;
+				text-align:center;
+				height:5rem;
+				padding:1rem;
+			}
 		}
-	}
-	.topic-show-assignment-container{
-		box-shadow: 2px 2px 2px black;
-		width:43%;
-		height:400px;
-		background-color: $yellow;
-		display:inline-block;
-		float:right;
-		border-radius:0.7rem;
-		margin-right:50px;
-		.topic-show-assignment-container-title{
-			font-size:2.5rem;
-			background-color:$blue;
+		.topic-show-assignment-container{
+			box-shadow: 2px 2px 2px black;
+			width:43%;
+			height:400px;
+			background-color: $yellow;
+			display:inline-block;
+			float:right;
 			border-radius:0.7rem;
-			text-align:center;
-			height:5rem;
-			padding:1rem;
+			margin-right:50px;
+			.topic-show-assignment-container-title{
+				font-size:2.5rem;
+				background-color:$blue;
+				border-radius:0.7rem;
+				text-align:center;
+				height:5rem;
+				padding:1rem;
+			}
 		}
+		
 	}
+	
 }
 
 @media (max-width:999px) and (min-width:200px){
@@ -202,37 +219,45 @@ a{
 		}
 		
 	}
-	.topic-show-lesson-container{
-		box-shadow: 2px 2px 2px black;
-		width:80%;
-		height:400px;
-		background-color: $yellow;
-		margin:1rem auto;
-		border-radius:0.7rem;
-		.topic-show-lesson-container-title{
-			font-size:2.5rem;
-			background-color:$blue;
+	.topic-show-container{
+		background-color:$lightblue;
+		margin:0 auto;
+		width:90%;
+		height:1000px;
+		margin-top:20px;
+		.topic-show-lesson-container{
+			box-shadow: 2px 2px 2px black;
+			width:80%;
+			height:400px;
+			background-color: $yellow;
+			margin:2rem auto;
 			border-radius:0.7rem;
-			text-align:center;
-			height:5rem;
-			padding:1rem;
+			.topic-show-lesson-container-title{
+				font-size:2.5rem;
+				background-color:$blue;
+				border-radius:0.7rem;
+				text-align:center;
+				height:5rem;
+				padding:1rem;
+			}
 		}
-	}
-	.topic-show-assignment-container{
-		box-shadow: 2px 2px 2px black;
-		width:80%;
-		height:400px;
-		background-color: $yellow;
-		border-radius:0.7rem;
-		margin:1rem auto;
-		.topic-show-assignment-container-title{
-			font-size:2.5rem;
-			background-color:$blue;
+		.topic-show-assignment-container{
+			box-shadow: 2px 2px 2px black;
+			width:80%;
+			height:400px;
+			background-color: $yellow;
 			border-radius:0.7rem;
-			text-align:center;
-			height:5rem;
-			padding:1rem;
+			margin:2rem auto;
+			.topic-show-assignment-container-title{
+				font-size:2.5rem;
+				background-color:$blue;
+				border-radius:0.7rem;
+				text-align:center;
+				height:5rem;
+				padding:1rem;
+			}
 		}
+
 	}
 }
 .home-introduction{
@@ -301,14 +326,7 @@ a{
 	box-shadow:1px 1px 1px $black;
 	font-size:1.8rem;
 }
-.topic-show-container{
-	background-color:$lightblue;
-	margin:0 auto;
-	width:90%;
-	height:580px;
-	margin-top:20px;
-	
-}
+
 .topic-show-title{
 	background-color: $red;
 	width:100%;
