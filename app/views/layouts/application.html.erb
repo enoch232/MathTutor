@@ -10,10 +10,12 @@
 </head>
 
 <body>
+  <% if notice || alert %>
   <div class = "notification">
   	<p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
   </div>
+  <% end %>
   <div class = "navigation" style = "">
     <div class = "navigation-brand">
       <%= link_to "KoInUs", root_path, style: "text-decoration:none" %>
@@ -32,7 +34,16 @@
     </div>
   </div>
   <%= yield %>
+  <div class = "footer">
+
+  </div>
   <script>
+  $(document).ready(function(){
+    setTimeout(function(){
+      $('.notification').fadeOut().$(this).remove();
+    },2000);
+  });
+
 
   </script>
 </body>
