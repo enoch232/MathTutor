@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MathTutor</title>
+  <title>KoTutor</title>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -18,7 +18,7 @@
   <% end %>
   <div class = "navigation" style = "">
     <div class = "navigation-brand">
-      <%= link_to "KoInUs", root_path, style: "text-decoration:none" %>
+      <%= link_to "KoTutor", root_path, style: "text-decoration:none" %>
     </div>
     <div class = "nav">
       <%= link_to "CONTACT", contact_path, style: "text-decoration:none" %>
@@ -40,7 +40,7 @@
   <script>
   $(document).ready(function(){
     setTimeout(function(){
-      $('.notification').fadeOut().$(this).remove();
+      $('.notification').fadeOut().remove();
     },2000);
   });
 
