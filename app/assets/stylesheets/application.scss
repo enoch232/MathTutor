@@ -1,14 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "animation.css";
 $red: #e85a71;
 $lightblue: #d8e9ef;
 $blue: #4ea1d3;
 $black: #454552;
 $yellow: #f9f6d7;
 $font: 'Roboto', sans-serifs;
-
 a{
-
 	color:$black;
 	&:hover{
 		text-decoration:none;	
@@ -23,9 +22,6 @@ a{
 	position:fixed;
 	z-index:1;
 }
-.container{
-}
-
 @media (max-width:50000px) and (min-width:1200px){
 	.assignment-list, .topic-list, .announcement-list{
 		box-shadow: 3px 3px 3px black;
@@ -339,7 +335,6 @@ a{
 .topic-show-lesson-assignment-container{
 	margin-top:2rem;
 }
-
 .topic-lesson{
 	box-shadow: 1px 1px 1px black;
 	margin:0.8rem auto;
@@ -470,3 +465,21 @@ a{
 
 	}
 }
+
+.no-access{
+	.no-access-title{
+		font-size:3rem;
+		height:80px;
+		width:100%;
+		background-color:red;
+		padding-left:3rem;
+		padding-top:1rem;
+	}
+	.no-access-description{
+		font-size:2rem;
+		height:450px;
+		padding-left:3rem;
+
+	}
+}
+

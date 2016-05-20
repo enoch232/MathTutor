@@ -11,9 +11,11 @@
 				<div style = "text-align:center">
 					Assignments
 				</div>
+				<% if current_user.email == "k5m1nster@gmail.com" %>
 				<div>
 					<%= link_to "New Assignment", new_topic_lesson_assignment_path(topic_id: @lesson.topic_id, lesson_id: @lesson.id), class: "btn btn-default" %>
 				</div>
+				<% end %>
 				<% @lesson.assignments.each do |assignment| %>
 				<div class = "lesson-assignment-div">
 					<%= link_to assignment.title, topic_lesson_assignment_path(topic_id: @lesson.topic_id, lesson_id: @lesson.id,id: assignment.id) %>

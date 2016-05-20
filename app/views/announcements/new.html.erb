@@ -1,3 +1,4 @@
+<% if current_user.email == "k5m1nster@gmail.com" %>
 <div>
 	<div>
 		<h1>New Announcement</h1>
@@ -6,7 +7,7 @@
 		<%= form_for(:announcement, url: announcements_path) do |f| %>
 		<%= f.label "Title" %>
 		<br />
-		<%= f.text_field :title %>
+		<%= f.text_field :title, maxlength: 34 %>
 		<br />
 		<%= f.label "Description" %>
 		<br />
@@ -16,3 +17,17 @@
 		<% end %>
 	</div>
 </div>
+<% else %>
+<div>
+	<div class = "no-access">
+		<div class = "no-access-title">
+			FATAL ERROR!
+		</div>
+		<div class = "no-access-description">
+			You do not have an access to this page.
+		</div>
+	</div>
+
+</div>
+<% end %>
+
