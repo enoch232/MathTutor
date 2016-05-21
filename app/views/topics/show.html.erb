@@ -1,3 +1,4 @@
+<% @adminemail = "k5m1nster@gmail.com" %>
 <div>
 	<div class = "topic-show-container">
 		<div class = "topic-show-title">
@@ -8,7 +9,7 @@
 				<div class = "topic-show-lesson-container-title titles">
 					Lessons
 				</div>
-				<% if current_user.email == "k5m1nster@gmail.com" %>
+				<% if current_user.email == @adminemail %>
 				<div style = "text-align:center;margin:10px;">
 					<%= link_to "New Lesson", new_topic_lesson_path(topic_id: @topic.id), class: "btn btn-default" %>
 				</div>
