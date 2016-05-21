@@ -2,8 +2,10 @@
 @import "bootstrap";
 @import "animation.css";
 $red: #e85a71;
+ 
 $lightblue: #d8e9ef;
 $blue: #4ea1d3;
+
 $black: #454552;
 $yellow: #f9f6d7;
 $font: 'Roboto', sans-serifs;
@@ -261,6 +263,9 @@ a{
 	height:400px;
 	background-color: $lightblue;
 	margin: 0 auto;
+	position:relative;
+	z-index:1000;
+	margin-bottom:60px;
 }
 .navigation{
 	background-color:$blue;
