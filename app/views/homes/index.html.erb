@@ -1,13 +1,12 @@
 
 	<% @adminemail = "k5m1nster@gmail.com" %>
 	<div class = "home-index-container">
-		<div class = "home-introduction animate-fadeIn">
-			<%= image_tag('kis-school.jpg', style: "width:100%" )%>
+		<div class = "home-introduction">
 		</div>
 		<div class = "list-container">
 			<div class = "topic-list">
-				<div style = "text-align:center">
-					<h1>Topics</h1>
+				<div class = "index-titles">
+					Topics
 				</div>
 				<% if current_user.email == @adminemail %>
 				<div style = "text-align:center">
@@ -29,8 +28,8 @@
 				</div>
 			</div>
 			<div class = "announcement-list">
-				<div style = "text-align:center">
-					<h1>Announcements</h1>
+				<div class = "index-titles">
+					Announcements
 				</div>
 				<% if current_user.email == @adminemail %>
 				<div style = "text-align:center;margin-bottom:1rem;">
@@ -48,8 +47,8 @@
 				</div>
 			</div>
 			<div class = "assignment-list">
-				<div style = "text-align:center">
-					<h1>Assignments</h1>
+				<div class = "index-titles">
+					Assignments
 				</div>
 				<div>
 					<% @assignments.each do |assignment| %>

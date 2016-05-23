@@ -1,9 +1,9 @@
 <div class = "announcement-show">
-	<div>
+	<div class = "announcement-title">
 		<%= @announcement.title %>
 	</div>
 	<div class = "announcement-time">
-		<%= time_ago_in_words(@announcement.created_at) %>
+		Posted <%= time_ago_in_words(@announcement.created_at) %> ago.
 	</div>
 	<div class = "announcement-description">
 		<%= @announcement.description %>
