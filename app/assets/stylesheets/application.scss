@@ -14,7 +14,8 @@ $font: 'Open Sans', sans-serifs;
 	font-size:3rem;
 	font-weight:100;
 	background-color: $green;
-    position: fixed;
+    position: absolute;
+    width:55px;
     padding-top:0.7rem; 
     padding-left:1.2rem;
     padding-right:1.2rem;
@@ -360,14 +361,13 @@ a{
 	color: $black;
 }
 .announcement{
-	background-color:#aacfd0;
+	background-color:#f3f6fb;
 	color: $black;
 	height:100px;
 	width:90%;
 	margin:1rem auto;
 	border:none;
 	border-radius:0.3rem;
-	box-shadow:1px 1px 1px $black;
 	font-size:1.8rem;
 }
 

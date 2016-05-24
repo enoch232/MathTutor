@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class = "index-menu">
+  <div class = "index-menu a-fast">
 
   </div>
   <div>
@@ -57,9 +57,27 @@
   </div>
   <script>
   $(document).ready(function(){
+    var menuout = 0;
     setTimeout(function(){
       $('.notification').fadeOut().remove();
     },2000);
+    $(".menu-button").on("click",function(){
+      if(menuout == 0){
+        $(".index-menu").removeClass("fadeOutLeft");
+        $(".index-menu").addClass("fadeInLeft");
+        $(".index-menu").show();
+        menuout = 1;
+      }else{
+        $(".index-menu").removeClass("fadeInLeft");
+        $(".index-menu").addClass("fadeOutLeft");
+        setTimeout(function(){
+          $(".index-menu").hide();
+        },500);
+        
+        menuout = 0;
+      }
+
+    });
   });
 
   </script>
