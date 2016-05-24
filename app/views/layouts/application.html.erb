@@ -6,12 +6,14 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <meta name = "viewport" content = "width=device-width, initial-scale=1" />
   <%= mathjax_tag %>
 </head>
 
 <body>
   <div class = "index-menu">
+
   </div>
   <div>
     <% if notice || alert %>
@@ -25,10 +27,10 @@
         <%= link_to "ThinkPowerMath", root_path, style: "text-decoration:none" %>
       </div>
       <div class = "nav">
-        <%= link_to "CONTACT", contact_path, style: "text-decoration:none" %>
+        <%= link_to "Contact", contact_path, style: "text-decoration:none" %>
       </div>
       <div class = "nav">
-        <%= link_to "ABOUT", about_path, style: "text-decoration:none" %>
+        <%= link_to "About", about_path, style: "text-decoration:none" %>
       </div>
       <% if current_user %>
       <div class = "nav">
@@ -38,10 +40,10 @@
       </div>
       <% else %>
       <div class = "nav">
-        <%= link_to "SIGN UP", sign_up_path, style: "text-decoration:none" %>
+        <%= link_to "Sign Up", sign_up_path, style: "text-decoration:none" %>
       </div>
       <div class = "nav">
-        <%= link_to "SIGN IN", sign_in_path, style: "text-decoration:none" %>
+        <%= link_to "Sign In", sign_in_path, style: "text-decoration:none" %>
       </div>
       <% end %>
     </div>
