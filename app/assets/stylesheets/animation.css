@@ -15,40 +15,59 @@
  	animation-iteration-count: infinite;
 }
 .fadeIn{
+	-webkit-animation-name: "fadeIn";
 	animation-name: "fadeIn";
 }
 .fadeOut{
+	-webkit-animation-name: "fadeOut";
 	animation-name: "fadeOut";
 }
 .fadeInRight{
+	-webkit-animation-name: "fadeInRight";
 	animation-name: "fadeInRight";
 }
 .fadeOutRight{
+	-webkit-animation-name: "fadeOutRight";
 	animation-name: "fadeOutRight";
 }
 .fadeInLeft{
+	-webkit-animation-name: "fadeInLeft";
 	animation-name: "fadeInLeft";
 }
 .fadeOutLeft{
+	-webkit-animation-name: "fadeOutLeft";
 	animation-name: "fadeOutLeft";
 }
 .fadeInDown{
+	-webkit-animation-name: "fadeInDown";
 	animation-name: "fadeInDown";
 }
 .fadeOutDown{
+	-webkit-animation-name: "fadeOutDown";
 	animation-name: "fadeOutDown";
 }
 .fadeInUp{
+	-webkit-animation-name: "fadeInUp";
 	animation-name: "fadeInUp";
 }
 .fadeOutUp{
+	-webkit-animation-name: "fadeOutUp";
 	animation-name: "fadeOutUp";
 }
 .focus{
+	-webkit-animation-name: "focus";
 	animation-name: "focus";
 }
 
 @keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@-webkit-keyframes fadeIn{
 	from{
 		opacity:0;
 	}
@@ -64,7 +83,29 @@
 		opacity:0;
 	}
 }
+@-webkit-keyframes fadeOut{
+	from{
+		opacity:1;
+	}
+	to{
+		opacity:0;
+	}
+}
 @keyframes focus{
+	from{
+		-webkit-transform:scale3d(1,1,1);
+		transform:scale3d(1,1,1);
+	}
+	50%{
+		-webkit-transform:scale3d(1.1,1.1,1.1);
+		transform:scale3d(1.1,1.1,1.1);
+	}
+	to{
+		-webkit-transform:scale(1,1,1);
+		transform:scale3d(1,1,1);
+	}
+}
+@-webkit-keyframes focus{
 	from{
 		-webkit-transform:scale3d(1,1,1);
 		transform:scale3d(1,1,1);
@@ -90,7 +131,31 @@
 		transform:translate3d(0,0,0);
 	}
 }
+@-webkit-keyframes fadeInRight{
+	from{
+		opacity:0;
+		-webkit-transform:translate3d(100%,0,0);
+		transform:translate3d(100%,0,0);
+	}
+	to{
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+	}
+}
 @keyframes fadeOutRight{
+	from{
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+	}
+	to{
+		opacity:0;
+		-webkit-transform:translate3d(100%,0,0);
+		transform:translate3d(100%,0,0);
+	}
+}
+@-webkit-keyframes fadeOutRight{
 	from{
 		opacity:1;
 		-webkit-transform:translate3d(0,0,0);
@@ -114,7 +179,31 @@
 		transform:translate3d(0,0,0);
 	}
 }
+@-webkit-keyframes fadeInLeft{
+	from{
+		opacity:0;
+		-webkit-transform:translate3d(-100%,0,0);
+		transform:translate3d(-100%,0,0);
+	}
+	to{
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+	}
+}
 @keyframes fadeOutLeft{
+	from{
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+	}
+	to{
+		opacity:0;
+		-webkit-transform:translate3d(-100%,0,0);
+		transform:translate3d(-100%,0,0);
+	}
+}
+@-webkit-keyframes fadeOutLeft{
 	from{
 		opacity:1;
 		-webkit-transform:translate3d(0,0,0);
@@ -138,7 +227,31 @@
 		transform:translate3d(0,0,0);
 	}
 }
+@-webkit-keyframes fadeInDown{
+	from{
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+		transform:translate3d(0,100%,0);
+	}
+	to{
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+	}
+}
 @keyframes fadeOutDown{
+	from{
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+	}
+	to{
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+		transform:translate3d(0,100%,0);
+	}
+}
+@-webkit-keyframes fadeOutDown{
 	from{
 		opacity:1;
 		-webkit-transform:translate3d(0,0,0);
@@ -162,7 +275,31 @@
 		transform:translate3d(0,0,0);
 	}
 }
+@-webkit-keyframes fadeInUp{
+	from{
+		opacity:0;
+		-webkit-transform:translate3d(0,-100%,0);
+		transform:translate3d(0,-100%,0);
+	}
+	to{
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+	}
+}
 @keyframes fadeOutUp{
+	from{
+		opacity:1;
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+	}
+	to{
+		opacity:0;
+		-webkit-transform:translate3d(0,-100%,0);
+		transform:translate3d(0,-100%,0);
+	}
+}
+@-webkit-keyframes fadeOutUp{
 	from{
 		opacity:1;
 		-webkit-transform:translate3d(0,0,0);
