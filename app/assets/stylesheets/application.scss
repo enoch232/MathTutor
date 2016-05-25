@@ -71,6 +71,57 @@ $font: 'Open Sans', sans-serifs;
 	height:800px;
 	position:fixed;
 	z-index: 10000;
+	.menu-account{
+		width:90%;
+		padding:1rem;
+		background-color:$white;
+		margin: 0.5rem auto;
+		margin-top:80px;
+
+
+
+	}
+	.menu-signout{
+		margin: 0.5rem auto;
+		width:90%;
+		padding:1rem;
+		background-color:$orange;
+		
+		
+
+	}
+	.menu-signin{
+		margin: 0.5rem auto;	
+		width:90%;
+		padding:1rem;
+		background-color:$green;
+		
+
+	}
+	.menu-signup{
+		margin: 0.5rem auto;
+		width:90%;
+		padding:1rem;
+		background-color:$orange;
+		
+
+	}
+	.menu-about{
+		margin: 0.5rem auto;
+		width:90%;
+		padding:1rem;
+		background-color:$yellow;
+		
+
+	}
+	.menu-contact{
+		margin: 0.5rem auto;
+		width:90%;
+		padding:1rem;
+		background-color:$pink;
+		
+
+	}
 }
 body{
 	background-color: #e0e0e0;
@@ -735,3 +786,12 @@ a{
 	background-color: $orange;
 	margin-bottom:1rem;
 }
+
+
+
+
+
+
+
+
+
