@@ -89,7 +89,9 @@
   $(document).ready(function(){
     var menuout = 0;
     setTimeout(function(){
-      $('.notification').fadeOut().remove();
+      $('.notification').fadeOut(1000,function(){
+        $(this).remove();
+      });
     },2000);
     $(".menu-button").on("click",function(){
       if(menuout == 0){
