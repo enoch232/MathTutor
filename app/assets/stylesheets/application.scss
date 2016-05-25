@@ -120,15 +120,15 @@ a{
 		
 		
 		.assignment-title{
-			margin-left:0.5rem;
+			padding:0.5rem;
 			font-size:1.3rem;
 		}
 		.assignment-description{
-			margin-left:0.5rem;
+			padding:0.5rem;
 			font-size:1rem;
 		}
 		.assignment-duedate{
-			margin-left:0.5rem;
+			padding:0.5rem;
 		}
 		&:hover{
 
@@ -594,6 +594,7 @@ a{
 }
 .devise{
 	padding-bottom:2rem;
+
 	border-radius:0.7rem;
 	background-color:$white;
 	width:30%;
@@ -605,4 +606,28 @@ a{
 		padding-bottom:2rem;
 		background-color: $orange;
 	}
+}
+.new-topic-title{
+	text-align:center;
+	padding:2rem;
+	background-color: $orange;
+	margin-bottom:1rem;
+}
+.new-lesson-title{
+	text-align:center;
+	padding:2rem;
+	background-color: $orange;
+	margin-bottom:1rem;
+}
+.new-announcement-title{
+	text-align:center;
+	padding:2rem;
+	background-color: $orange;
+	margin-bottom:1rem;
+}
+.new-assignment-title{
+	text-align:center;
+	padding:2rem;
+	background-color: $orange;
+	margin-bottom:1rem;
 }
