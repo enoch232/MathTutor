@@ -121,6 +121,46 @@ a{
 			padding-bottom:1rem;
 		}
 	}
+	.announcement-show{
+		width:90%;
+		height:150px;
+		border-radius: 5px;
+		margin: 10px auto;
+		text-align:left;
+		background-color:$white;
+		.announcement-title{
+			width:100%;
+			background-color:$orange;
+			height:50px;
+			font-size:2.5rem;
+			font-weight:900;
+			padding:1rem;
+		}
+		.announcement-description{
+			background-color: $white;
+			font-weight:100;
+			padding:1rem;
+			font-size:2rem;
+		}
+		.announcement-time{
+			background-color: $white;
+			font-weight:100;
+			padding:1rem;
+			font-size:1rem;
+
+		}
+		
+	}
+	.announcement{
+		background-color:#f3f6fb;
+		border-top:3px solid $orange;
+		color: $black;
+		max-height:100px;
+		width:90%;
+		margin:1rem auto;
+
+		font-size:1.8rem;
+	}
 	.assignment{
 		float:left;
 		display:inline-block;
@@ -220,6 +260,45 @@ a{
 			padding-bottom:1rem;
 		}
 	}
+	.announcement-show{
+		width:90%;
+		height:150px;
+		border-radius: 5px;
+		margin: 10px auto;
+		text-align:left;
+		background-color:$white;
+		.announcement-title{
+			width:100%;
+			background-color:$orange;
+			height:50px;
+			font-size:2.5rem;
+			font-weight:900;
+			padding:1rem;
+		}
+		.announcement-description{
+			background-color: $white;
+			font-weight:100;
+			padding:1rem;
+			font-size:2rem;
+		}
+		.announcement-time{
+			background-color: $white;
+			font-weight:100;
+			padding:1rem;
+			font-size:1rem;
+
+		}
+		
+	}
+	.announcement{
+		background-color:#f3f6fb;
+		border-top:3px solid $orange;
+		color: $black;
+		max-height:100px;
+		width:90%;
+		margin:1rem auto;
+		font-size:1.8rem;
+	}
 	.assignment{
 		float:left;
 		display:inline-block;
@@ -301,7 +380,7 @@ a{
 	}
 	.assignment-list, .topic-list, .announcement-list{
 		height:400px;
-		width:80%;
+		width:90%;
 		margin:3rem auto;
 		background-color: $white;
 		.index-titles{
@@ -313,6 +392,45 @@ a{
 			padding-top:1rem;
 			padding-bottom:1rem;
 		}
+	}
+	.announcement{
+		background-color:#f3f6fb;
+		border-top:3px solid $orange;
+		color: $black;
+		max-height:100px;
+		width:90%;
+		margin:1rem auto;
+		font-size:1.1rem;
+	}
+	.announcement-show{
+		width:90%;
+		height:150px;
+		border-radius: 5px;
+		margin: 10px auto;
+		text-align:left;
+		background-color:$white;
+		.announcement-title{
+			width:100%;
+			background-color:$orange;
+			height:50px;
+			font-size:1.5rem;
+			font-weight:900;
+			padding:0.7rem;
+		}
+		.announcement-description{
+			background-color: $white;
+			font-weight:100;
+			padding:0.7rem;
+			font-size:2rem;
+		}
+		.announcement-time{
+			background-color: $white;
+			font-weight:100;
+			padding:1rem;
+			font-size:1rem;
+
+		}
+		
 	}
 	.assignment{
 		float:left;
@@ -327,14 +445,15 @@ a{
 		margin:1rem 3%;
 		.assignment-title{
 			margin-left:0.5rem;
-			font-size:1.3rem;
+			font-size:1rem;
 		}
 		.assignment-description{
 			margin-left:0.5rem;
-			font-size:1rem;
+			font-size:0.8rem;
 		}
 		.assignment-duedate{
 			margin-left:0.5rem;
+			font-size:1.1rem;
 		}
 		
 	}
@@ -420,16 +539,6 @@ a{
 	font-size:1.8rem;
 	color: $black;
 	font-weight:800;
-}
-.announcement{
-	background-color:#f3f6fb;
-	border-top:3px solid $orange;
-	color: $black;
-	max-height:100px;
-	width:90%;
-	margin:1rem auto;
-
-	font-size:1.8rem;
 }
 
 .topic-show-title{
@@ -599,37 +708,6 @@ a{
 	}
 }
 
-
-.announcement-show{
-	width:90%;
-	height:150px;
-	border-radius: 5px;
-	margin: 10px auto;
-	text-align:left;
-	background-color:$white;
-	.announcement-title{
-		width:100%;
-		background-color:$orange;
-		height:50px;
-		font-size:2.5rem;
-		font-weight:900;
-		padding:1rem;
-	}
-	.announcement-description{
-		background-color: $white;
-		font-weight:100;
-		padding:1rem;
-		font-size:2rem;
-	}
-	.announcement-time{
-		background-color: $white;
-		font-weight:100;
-		padding:1rem;
-		font-size:1rem;
-
-	}
-	
-}
 .btn-default{
 	margin:1rem;
 }
