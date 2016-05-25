@@ -3,6 +3,11 @@
 		<div class = "assignment-show-page-title"><%= @assignment.title %></div>
 		<div class = "assignment-show-page-description"><%= @assignment.description %></div>
 		<div class = "assignment-show-page-duedate">Due: <%= @assignment.duedate %></div>
+		<% if current_user.email == "k5m1nster@gmail.com" %>
+		<%= link_to topic_lesson_assignment_path(@assignment), method: :delete, data: {confirm: "Are you sure"} do %>
+			<div class = "assignment-show-page-delete">Delete</div>
+		<% end %>
+		<% end %>
 	</div>
 	<div style = "text-align:center;margin-bottom:2rem">
 		<%= link_to "Back", :back, class: "btn btn-default" %>

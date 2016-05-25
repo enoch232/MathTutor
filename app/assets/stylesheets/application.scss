@@ -10,6 +10,7 @@ $white: #ffffff;
 $grey: #f3f3f4;
 $green: #18A689;
 $orange: #f8ac59;
+$red: #E53A40;
 $font: 'Open Sans', sans-serifs;
 .menu-button{
 	cursor:pointer;
@@ -385,7 +386,7 @@ a{
 	max-height:100px;
 	width:90%;
 	margin:1rem auto;
-	border-radius:0.3rem;
+
 	font-size:1.8rem;
 }
 
@@ -477,7 +478,11 @@ a{
 	.assignment-show-page-duedate{
 		text-align:center;
 		font-size:2.5rem;
-		border:8px solid black;
+	}
+	.assignment-show-page-delete{
+		background-color: $red;
+		text-align:center;
+		font-size:2.5rem;
 	}
 
 }
