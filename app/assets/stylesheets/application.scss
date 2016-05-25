@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "animation.css";
-$red: #e85a71;
+$pink: #e85a71;
 $lightblue: #f3f6fb;
 $blue: #4ea1d3;
 $black: #273948;
@@ -57,7 +57,7 @@ $font: 'Open Sans', sans-serifs;
 		display:none;
 	}
 	.navigation-brand{
-		padding-left:1rem;
+		padding-left:2rem;
 	}
 	.nav{
 		display:inline-block;
@@ -180,18 +180,25 @@ a{
 }
 @media (max-width:1199px) and (min-width:1000px){
 	.assignment-list, .topic-list, .announcement-list{
-		box-shadow: 3px 3px 3px black;
 		height:400px;
 		width:80%;
 		margin:3rem auto;
-		background-color: $red;
+		background-color: $white;
+		.index-titles{
+			border-top: 3px solid #d0d0d0;
+			text-align:left;
+			font-size:2rem;
+			border-bottom: 1px solid #d0d0d0;
+			padding-left:1.5rem;
+			padding-top:1rem;
+			padding-bottom:1rem;
+		}
 	}
 	.assignment{
 		float:left;
 		display:inline-block;
-		box-shadow:1px 1px 1px $black;
 		color: $black;
-		background-color: $yellow;
+		background-color: $grey;
 		width:44%;
 		height:85px;
 		font-size:1.5rem;
@@ -224,29 +231,24 @@ a{
 			display:inline-block;
 			float:left;
 			margin-left:50px;
-			border-radius:0.7rem;
 			.topic-show-lesson-container-title{
 				font-size:2.5rem;
-				background-color:$blue;
-				border-radius:0.7rem;
+				background-color:$orange;
 				text-align:center;
 				height:5rem;
 				padding:1rem;
 			}
 		}
 		.topic-show-assignment-container{
-			box-shadow: 2px 2px 2px black;
 			width:43%;
 			height:400px;
 			background-color: $white;
 			display:inline-block;
 			float:right;
-			border-radius:0.7rem;
 			margin-right:50px;
 			.topic-show-assignment-container-title{
 				font-size:2.5rem;
-				background-color:$blue;
-				border-radius:0.7rem;
+				background-color:$green;
 				text-align:center;
 				height:5rem;
 				padding:1rem;
@@ -448,12 +450,11 @@ a{
 }
 .assignment-show-list{
 	.topic-assignment{
-		box-shadow: 1px 1px 1px black;
 		background-color: $grey;
 		margin-top:0.5rem;
-		text-align:center;
-		border-radius:5px;
+		text-align:left;
 		width:90%;
+		padding-left:1rem;
 		margin-left: auto;
 		margin-right: auto
 	}
