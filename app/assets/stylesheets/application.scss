@@ -562,27 +562,47 @@ a{
 .announcement-show{
 	width:90%;
 	height:150px;
-	box-shadow: 5px 5px black;
 	border-radius: 5px;
 	margin: 10px auto;
-	text-align:center;
-	background-color:#aacfd0;
+	text-align:left;
+	background-color:$white;
 	.announcement-title{
 		width:100%;
-		background-color:$lightblue;
+		background-color:$orange;
 		height:50px;
-		font-size:2rem;
-		font-weight:800;
+		font-size:2.5rem;
+		font-weight:900;
 		padding:1rem;
 	}
 	.announcement-description{
-
+		background-color: $white;
+		font-weight:100;
+		padding:1rem;
+		font-size:2rem;
 	}
 	.announcement-time{
+		background-color: $white;
+		font-weight:100;
+		padding:1rem;
+		font-size:1rem;
 
 	}
 	
 }
 .btn-default{
 	margin:1rem;
+}
+.devise{
+	padding-bottom:2rem;
+	border-radius:0.7rem;
+	background-color:$white;
+	width:30%;
+	border-top:3px solid $red;
+	text-align:center;
+	margin:3rem auto;
+	.devise-title{
+		padding-top:1rem;
+		padding-bottom:2rem;
+		background-color: $orange;
+	}
 }
