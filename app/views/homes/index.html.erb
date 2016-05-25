@@ -1,80 +1,82 @@
 
-	<% @adminemail = "k5m1nster@gmail.com" %>
-	<div class = "home-index-container">
-		<div class = "home-introduction">
-			<div class = "welcome-message" style = "margin-bottom:1rem">
-				Wecome <%= current_user.name %>
-			</div>
-			<div class = "current-notification">
-				You have 
-			</div>
+<% @adminemail = "k5m1nster@gmail.com" %>
+<div class = "home-index-container">
+	<div class = "home-introduction">
+		<div class = "welcome-message" style = "margin-bottom:1rem">
+			Wecome <%= current_user.name %>
 		</div>
-		<div class = "list-container">
-			<div class = "topic-list">
-				<div class = "index-titles">
-					Topics
-				</div>
-				<% if current_user.email == @adminemail %>
-				<div style = "text-align:center">
-					<%= link_to "New Topic", new_topic_path, class: "btn btn-default" %>
-				</div>
-				<% end %>
-				<br />
-				<div style = "overflow:auto">
-					<% @topics.each do |topic| %>
-					<%= link_to topic_path(topic) do %>
-					<div class = "topic">
-						<span style = "margin-left:1rem"><%= topic.title.capitalize %></span>
-						<% if current_user.email == @adminemail %>
-						<%= link_to "X", topic_path(topic), method: :delete, style: "float:right;padding-right:1rem" %>
-						<% end %>
-					</div>
-					<% end %>
-					<% end %>
-				</div>
-			</div>
-			<div class = "announcement-list">
-				<div class = "index-titles">
-					Announcements
-				</div>
-				<% if current_user.email == @adminemail %>
-				<div style = "text-align:center;margin-bottom:1rem;">
-					<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default" %>
-				</div>
-				<% end %>
-				<div style = "overflow:auto;">
-					<% @announcements.each do |announcement| %>
-					<%= link_to announcement_path(announcement) do %>
-					<div class = "announcement">
-						<span style = "margin-left:1rem"><%= announcement.title.capitalize %></span>
-					</div>
-					<% end %>
-					<% end %>
-				</div>
-			</div>
-			<div class = "assignment-list">
-				<div class = "index-titles">
-					Assignments
-				</div>
-				<div>
-					<% @assignments.each do |assignment| %>
-					<%= link_to topic_lesson_assignment_path(topic_id: assignment.topic_id, lesson_id: assignment.lesson_id, id: assignment.id) do %>
-					<div class = "assignment">
-						<span class = "assignment-title"><%= assignment.title.capitalize %></span>
-						<br />
-						<span class = "assignment-description"><%= assignment.description.capitalize %></span>
-						<br />
-						<span class = "assignment-duedate">Due: <%= assignment.duedate %></span>
-					</div>
-					<% end %>
-					<% end %>
-				</div>
-			</div>
-			<div style = "clear:both">
-			</div>
-		</div>
-		<div>
-		</div>
-		<div class = "review-list">
+		<div class = "current-notification">
+			You have 
 		</div>
 	</div>
+	<div class = "list-container">
+		<div class = "topic-list">
+			<div class = "index-titles">
+				Topics
+			</div>
+			<% if current_user.email == @adminemail %>
+			<div style = "text-align:center">
+				<%= link_to "New Topic", new_topic_path, class: "btn btn-default" %>
+			</div>
+			<% end %>
+			<br />
+			<div style = "overflow:auto">
+				<% @topics.each do |topic| %>
+				<%= link_to topic_path(topic) do %>
+				<div class = "topic">
+					<span style = "margin-left:1rem"><%= topic.title.capitalize %></span>
+					<% if current_user.email == @adminemail %>
+					<%= link_to "X", topic_path(topic), method: :delete, data: {confirm: "Are you sure?"}, style: "float:right;padding-right:1rem" %>
+					<% end %>
+				</div>
+				<% end %>
+				<% end %>
+			</div>
+		</div>
+		<div class = "announcement-list">
+			<div class = "index-titles">
+				<%= link_to "Announcements", announcements_path %>
+			</div>
+			<% if current_user.email == @adminemail %>
+			<div style = "text-align:center;">
+				<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default" %>
+			</div>
+			<% end %>
+			<div style = "overflow:auto;">
+				<% @announcements.each do |announcement| %>
+				<%= link_to announcement_path(announcement) do %>
+				<div class = "announcement">
+					<span style = "font-size:1rem;margin-left:1rem">Posted <%= time_ago_in_words(announcement.created_at) %> ago. </span>
+					<br />
+					<span style = "margin-left:1rem"><%= announcement.title.capitalize %></span>
+				</div>
+				<% end %>
+				<% end %>
+			</div>
+		</div>
+		<div class = "assignment-list">
+			<div class = "index-titles">
+				Assignments
+			</div>
+			<div>
+				<% @assignments.each do |assignment| %>
+				<%= link_to topic_lesson_assignment_path(topic_id: assignment.topic_id, lesson_id: assignment.lesson_id, id: assignment.id) do %>
+				<div class = "assignment">
+					<span class = "assignment-title"><%= assignment.title.capitalize %></span>
+					<br />
+					<span class = "assignment-description"><%= assignment.description.capitalize %></span>
+					<br />
+					<span class = "assignment-duedate">Due: <%= assignment.duedate %></span>
+				</div>
+				<% end %>
+				<% end %>
+			</div>
+		</div>
+		<div style = "clear:both">
+		</div>
+	</div>
+	<div>
+	</div>
+	<div class = "review-list">
+	</div>
+</div>

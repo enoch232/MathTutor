@@ -16,9 +16,9 @@
 				<% end %>
 				<div class = "lesson-show-list">
 					<% @topic.lessons.each do |lesson| %>
-						<%= link_to topic_lesson_path(topic_id: @topic.id, id: lesson.id) do %>
-						<div class = "topic-lesson"><%= @topic.title.capitalize + ' - ' + lesson.title.capitalize %></div>
-						<% end %>
+					<%= link_to topic_lesson_path(topic_id: @topic.id, id: lesson.id) do %>
+					<div class = "topic-lesson"><%= @topic.title.capitalize + ' - ' + lesson.title.capitalize %></div>
+					<% end %>
 					<% end %>
 				</div>
 			</div>
@@ -28,11 +28,11 @@
 				</div>
 				<div class = "assignment-show-list">
 					<% @topic.assignments.each do |assignment| %>
-						<%= link_to topic_lesson_assignment_path(topic_id: @topic.id, lesson_id:assignment.lesson_id, id: assignment.id) do %>
-							<div class = "topic-assignment">
-								<%= assignment.title %>
-							</div>
-						<% end %>
+					<%= link_to topic_lesson_assignment_path(topic_id: @topic.id, lesson_id:assignment.lesson_id, id: assignment.id) do %>
+					<div class = "topic-assignment">
+						<%= assignment.title %>
+					</div>
+					<% end %>
 					<% end %>
 				</div>
 			</div>
