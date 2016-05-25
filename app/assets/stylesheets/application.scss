@@ -261,18 +261,25 @@ a{
 
 @media (max-width:999px) and (min-width:200px){
 	.assignment-list, .topic-list, .announcement-list{
-		box-shadow: 3px 3px 3px black;
 		height:400px;
 		width:80%;
 		margin:3rem auto;
-		background-color: $red;
+		background-color: $white;
+		.index-titles{
+			border-top: 3px solid #d0d0d0;
+			text-align:left;
+			font-size:2rem;
+			border-bottom: 1px solid #d0d0d0;
+			padding-left:1.5rem;
+			padding-top:1rem;
+			padding-bottom:1rem;
+		}
 	}
 	.assignment{
 		float:left;
 		display:inline-block;
-		box-shadow:1px 1px 1px $black;
 		color: $black;
-		background-color: $yellow;
+		background-color: $grey;
 		width:44%;
 		height:85px;
 		font-size:1.5rem;
@@ -293,38 +300,32 @@ a{
 		
 	}
 	.topic-show-container{
-		background-color: $white;
+		background-color: $grey;
 		margin:0 auto;
 		width:90%;
 		height:1000px;
 		margin-top:20px;
 		.topic-show-lesson-container{
-			box-shadow: 2px 2px 2px black;
 			width:80%;
 			height:400px;
-			background-color: $yellow;
+			background-color: $white;
 			margin:2rem auto;
-			border-radius:0.7rem;
 			.topic-show-lesson-container-title{
 				font-size:2.5rem;
-				background-color:$blue;
-				border-radius:0.7rem;
+				background-color:$orange;
 				text-align:center;
 				height:5rem;
 				padding:1rem;
 			}
 		}
 		.topic-show-assignment-container{
-			box-shadow: 2px 2px 2px black;
 			width:80%;
 			height:400px;
-			background-color: $yellow;
-			border-radius:0.7rem;
+			background-color: $white;
 			margin:2rem auto;
 			.topic-show-assignment-container-title{
 				font-size:2.5rem;
-				background-color:$blue;
-				border-radius:0.7rem;
+				background-color:$green;
 				text-align:center;
 				height:5rem;
 				padding:1rem;
