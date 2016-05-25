@@ -91,6 +91,19 @@ a{
 	z-index:1;
 }
 @media (max-width:50000px) and (min-width:1200px){
+	.devise{
+		padding-bottom:2rem;
+		background-color:$white;
+		width:40%;
+		border-top:3px solid $red;
+		text-align:center;
+		margin:3rem auto;
+		.devise-title{
+			padding-top:1rem;
+			padding-bottom:2rem;
+			background-color: $orange;
+		}
+	}
 	.assignment-list, .topic-list, .announcement-list{
 		display:inline-block;
 		height:400px;
@@ -179,6 +192,19 @@ a{
 	}
 }
 @media (max-width:1199px) and (min-width:1000px){
+	.devise{
+		padding-bottom:2rem;
+		background-color:$white;
+		width:50%;
+		border-top:3px solid $red;
+		text-align:center;
+		margin:3rem auto;
+		.devise-title{
+			padding-top:1rem;
+			padding-bottom:2rem;
+			background-color: $orange;
+		}
+	}
 	.assignment-list, .topic-list, .announcement-list{
 		height:400px;
 		width:80%;
@@ -260,6 +286,19 @@ a{
 }
 
 @media (max-width:999px) and (min-width:200px){
+	.devise{
+		padding-bottom:2rem;
+		background-color:$white;
+		width:60%;
+		border-top:3px solid $red;
+		text-align:center;
+		margin:3rem auto;
+		.devise-title{
+			padding-top:1rem;
+			padding-bottom:2rem;
+			background-color: $orange;
+		}
+	}
 	.assignment-list, .topic-list, .announcement-list{
 		height:400px;
 		width:80%;
@@ -593,21 +632,6 @@ a{
 }
 .btn-default{
 	margin:1rem;
-}
-.devise{
-	padding-bottom:2rem;
-
-	border-radius:0.7rem;
-	background-color:$white;
-	width:30%;
-	border-top:3px solid $red;
-	text-align:center;
-	margin:3rem auto;
-	.devise-title{
-		padding-top:1rem;
-		padding-bottom:2rem;
-		background-color: $orange;
-	}
 }
 .new-topic-title{
 	text-align:center;
