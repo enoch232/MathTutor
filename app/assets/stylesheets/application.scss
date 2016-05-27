@@ -615,7 +615,7 @@ a{
 }
 
 .topic-show-title{
-	background-color: $white;
+	background-color: $pink;
 	width:100%;
 	font-size:3rem;
 	text-align:left;
@@ -658,15 +658,17 @@ a{
 }
 
 .lesson-assignment{
-	background-color: $orange;
+	background-color: $white;
 	width:100%;
 	min-height:8rem;
 	padding-bottom:2rem;
 	.lesson-assignment-div{
-		width:95%;
+		width:99%;
 		margin: 0.5rem auto;
 		background-color:$grey;
+		text-align:left;
 		padding:1rem;
+		border-radius:0.7rem;
 
 	}
 }
@@ -816,8 +818,20 @@ a{
 	overflow:auto;
 	height:348px;
 }
-
-
+.btn-primary{
+	background-color: $orange;
+	border:none;
+	&:hover{
+		background-color:$orange;
+	}
+}
+.announcement-text{
+	display:inline-block;
+	background-color: $orange;
+	padding-left:0.3rem;
+	padding-right:0.3rem;
+	border-radius:0.3rem;
+}
 
 
 
