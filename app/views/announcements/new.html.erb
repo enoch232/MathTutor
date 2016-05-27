@@ -4,7 +4,7 @@
 		<h1>New Announcement</h1>
 	</div>
 	<div style = "text-align:center">
-		<%= form_for(:announcement, url: announcements_path) do |f| %>
+		<%= form_for(:announcement, url: announcements_path, remote: true) do |f| %>
 		<%= f.label "Title" %>
 		<br />
 		<%= f.text_field :title, maxlength: 34, class: "form-control", style: "width:80%;margin:0 auto"  %>
