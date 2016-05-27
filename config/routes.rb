@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   devise_scope :user do get "/sign_up" => "devise/registrations#new" end
   get '/about' => 'homes#about'
   get '/contact' => 'homes#contact'
+  mount ActionCable.server => '/cable'
 
 end
