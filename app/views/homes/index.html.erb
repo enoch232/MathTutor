@@ -13,14 +13,14 @@
 		<div class = "topic-list">
 			<div class = "index-titles">
 				Topics
+				<% if current_user.email == @adminemail %>
+				<div style = "text-align:center;display:inline-block">
+					<%= link_to "New Topic", new_topic_path, class: "btn btn-default" %>
+				</div>
+				<% end %>
 			</div>
-			<% if current_user.email == @adminemail %>
-			<div style = "text-align:center">
-				<%= link_to "New Topic", new_topic_path, class: "btn btn-default" %>
-			</div>
-			<% end %>
 			<br />
-			<div style = "overflow:auto">
+			<div style = "overflow:auto;height:320px">
 				<% @topics.each do |topic| %>
 				<%= link_to topic_path(topic) do %>
 				<div class = "topic">
@@ -36,13 +36,13 @@
 		<div class = "announcement-list">
 			<div class = "index-titles">
 				<%= link_to "Announcements", announcements_path %>
+				<% if current_user.email == @adminemail %>
+				<div style = "text-align:center;display:inline-block">
+					<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default" %>
+				</div>
+				<% end %>
 			</div>
-			<% if current_user.email == @adminemail %>
-			<div style = "text-align:center;">
-				<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default" %>
-			</div>
-			<% end %>
-			<div class = "index-announcement-holder" style = "overflow:auto;">
+			<div class = "index-announcement-holder" style = "overflow:auto;height:320px">
 				<% @announcements.each do |announcement| %>
 				<%= link_to announcement_path(announcement) do %>
 				<div class = "announcement">

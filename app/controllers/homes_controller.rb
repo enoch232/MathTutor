@@ -3,6 +3,6 @@ class HomesController < ApplicationController
 	def index
 	  @assignments = Assignment.all.order("assignments.created_at desc").limit(6)
 	  @topics = Topic.all
-	  @announcements = Announcement.all.order("announcements.updated_at desc").limit(2)
+	  @announcements = Announcement.all.order("announcements.updated_at desc").limit(6)
 	end
 end
