@@ -10,7 +10,12 @@ class AnnouncementsController < ApplicationController
   def create
     @announcement = Announcement.new(announcement_params)
     if @announcement.save
-      redirect_to @announcement
+      @title = @announcement.title
+      @description = @announcement.description
+      respond_to do |format|
+        format.html{redirect_to @announcement}
+        format.js
+      end
     else 
       render :new
     end

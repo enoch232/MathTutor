@@ -7,4 +7,9 @@ App.announcement = App.cable.subscriptions.create "AnnouncementChannel",
 
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
+    alert("hello")
+   	alert("#{data['title']}: #{data['description']}")
+
   speak: (title, description) ->
+  	@perform 'speak', {title: title, description: description }
+
