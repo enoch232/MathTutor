@@ -35,8 +35,8 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Action Cable endpoint configuration
-  config.action_cable.url = 'wss://thinkpowermath.com/cable'
-  config.action_cable.allowed_request_origins = [ 'https://thinkpowermath.com', /http:\/\/thinkpowermath*/ ]
+  config.action_cable.url = 'wss://www.thinkpowermath.com/cable'
+  config.action_cable.allowed_request_origins = [ 'https://www.thinkpowermath.com', /http:\/\/www\.thinkpowermath*/ ]
   # Don't mount Action Cable in the main server process.
   # config.action_cable.mount_path = nil
 
