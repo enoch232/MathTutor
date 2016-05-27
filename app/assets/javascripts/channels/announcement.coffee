@@ -8,10 +8,9 @@ App.announcement = App.cable.subscriptions.create "AnnouncementChannel",
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
     $(".index-announcement-holder").prepend("<a href = '/announcements/#{data["path"]}'><div class = 'announcement'><span style = 'font-size:1rem;margin-left:1rem'>Posted just now. </span><br /><span style = 'margin-left:1rem'>#{data['title']}</span></div></a>")
-   	alert("#{data['title']}: #{data['description']}")
-   	alert(data['path'])
-   	
-
+   	$("#announcement-modal-title").text("Announcement: #{data['title']}")
+   	$("#announcement-modal-body").text(data['description'])
+   	$("#announcement-modal").modal({"backdrop" : "static","keyboard":"true"})
   speak: (title, description, path) ->
   	@perform 'speak', {title: title, description: description, path: path }
 
