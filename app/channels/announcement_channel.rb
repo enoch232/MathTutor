@@ -9,6 +9,6 @@ class AnnouncementChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-  	ActionCable.server.broadcast "announcement_channel", {title: data['title'], description: data['description']}
+  	ActionCable.server.broadcast "announcement_channel", {title: data['title'], description: data['description'], path: data['path']}
   end
 end

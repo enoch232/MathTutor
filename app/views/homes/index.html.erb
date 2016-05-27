@@ -42,7 +42,7 @@
 				<%= link_to "New Announcement", new_announcement_path, class: "btn btn-default" %>
 			</div>
 			<% end %>
-			<div style = "overflow:auto;">
+			<div class = "index-announcement-holder" style = "overflow:auto;">
 				<% @announcements.each do |announcement| %>
 				<%= link_to announcement_path(announcement) do %>
 				<div class = "announcement">
