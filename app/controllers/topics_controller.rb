@@ -1,5 +1,5 @@
 class TopicsController < ApplicationController
-  before_action :topic_find, only: [:show, :destroy, :create_lesson]
+  before_action :topic_find, only: [:show, :destroy, :create_lesson, :edit, :update]
   def index
     @topics = Topic.all
   end
@@ -13,6 +13,15 @@ class TopicsController < ApplicationController
       redirect_to @topic
     else 
       render :new
+    end
+  end
+  def edit
+  end
+  def update
+    if @topic.update(topic_params)
+      redirect_to @topic, notice: "Topic was updated successfully"
+    else
+      render :edit
     end
   end
   def show

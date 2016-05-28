@@ -3,6 +3,7 @@
 	<div class = "topic-show-container">
 		<div class = "topic-show-title">
 			<%= @topic.title.capitalize %>
+			<%= link_to "Edit Topic", edit_topic_path(@topic), class: "btn btn-default" %>
 		</div>
 		<div class = "topic-show-lesson-assignment-container">
 			<div class = "topic-show-lesson-container">
