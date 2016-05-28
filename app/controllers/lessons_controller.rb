@@ -1,12 +1,10 @@
 class LessonsController < ApplicationController
-  before_action :lesson_find, only: [:show, :destroy]
+  before_action :lesson_find, only: [:show, :destroy, :edit, :update]
   def index
   end
-
   def new
     @lesson = Lesson.new
   end
-
   def create
     @topic = Topic.find(params[:topic_id])
     @lesson = @topic.lessons.new(lesson_params)
@@ -17,12 +15,20 @@ class LessonsController < ApplicationController
       render :new
     end
   end
+  def edit
+  end
+  def update
+    if @lesson.update(lesson_params)
+      redirect_to @lesson, notice: "Lesson was successfully updated!"
+    else
+      render :edit
+    end
 
+  end
   def destroy
     @lesson.destroy
     redirect_to root_path
   end
-
   def show
   end
   private
