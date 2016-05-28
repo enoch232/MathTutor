@@ -1,0 +1,17 @@
+<div style = "text-align:center">
+	<%= form_for(:assignment, url: topic_lesson_assignments_path) do |f| %>
+	<%= f.label "Title" %>
+	<br />
+	<%= f.text_field :title, maxlength: 34, class: "form-control", style: "width:80%;margin:0 auto" %>
+	<br />
+	<%= f.label "Description" %>
+	<br />
+	<%= f.text_area :description, class: "form-control", style: "width:80%;height:400px;margin:0 auto"  %>
+	<br />
+	<%= f.label "Due Date" %>
+	<br />
+	<%= f.text_field :duedate, maxlength:10, class: "form-control", style: "width:80%;margin:0 auto"  %>
+	<br />
+	<%= f.submit class: "btn btn-default"  %>
+	<% end %>
+</div>

@@ -7,6 +7,9 @@
 		<%= link_to topic_lesson_assignment_path(@assignment), method: :delete, data: {confirm: "Are you sure?"} do %>
 			<div class = "assignment-show-page-delete">Delete</div>
 		<% end %>
+		<%= link_to edit_topic_lesson_assignment_path(@assignment) do %>
+			<div class = "assignment-show-page-edit">Edit</div>
+		<% end %>
 		<% end %>
 	</div>
 	<div style = "text-align:center;margin-bottom:2rem">
