@@ -6,6 +6,6 @@
 		Posted <%= time_ago_in_words(@announcement.created_at) %> ago.
 	</div>
 	<div class = "announcement-description">
-		<%= @announcement.description %>
+		<%= @announcement.description.html_safe %>
 	</div>
 </div>

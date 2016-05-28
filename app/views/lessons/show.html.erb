@@ -6,7 +6,7 @@
 				<%= @lesson.title.capitalize %>
 			</div>
 			<div class = "lesson-show-description">
-				<%= @lesson.description.capitalize %>
+				<%= @lesson.description.capitalize.html_safe %>
 			</div>
 			<div class = "lesson-assignment">
 				<div style = "text-align:center">
