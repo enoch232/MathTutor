@@ -1,6 +1,7 @@
 <div class = "announcement-show">
 	<div class = "announcement-title">
 		<%= @announcement.title %>
+		<%= link_to "Edit announcement", edit_announcement_path(@announcement), class: "btn btn-default" %>
 	</div>
 	<div class = "announcement-time">
 		Posted <%= time_ago_in_words(@announcement.created_at) %> ago.

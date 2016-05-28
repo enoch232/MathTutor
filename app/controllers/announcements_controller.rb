@@ -1,5 +1,5 @@
 class AnnouncementsController < ApplicationController
-  before_action :announcement_find, only: [:show, :destroy]
+  before_action :announcement_find, only: [:show, :destroy, :edit, :update]
   def index
   end
 
@@ -16,6 +16,15 @@ class AnnouncementsController < ApplicationController
       end
     else 
       render :new
+    end
+  end
+  def edit
+  end
+  def update
+    if @announcement.update(announcement_params)
+      redirect_to @announcement
+    else
+      render :edit
     end
   end
 
