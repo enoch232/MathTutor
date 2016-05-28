@@ -23,7 +23,6 @@ class LessonsController < ApplicationController
     else
       render :edit
     end
-
   end
   def destroy
     @lesson.destroy

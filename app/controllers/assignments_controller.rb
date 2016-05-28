@@ -21,7 +21,7 @@
   end
   def update
     if @assignment.update(assignment_params)
-      redirect_to @assignment
+      redirect_to @assignment, notice: "Assignment was successfully updated!"
     else
       render :edit
     end
