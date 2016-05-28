@@ -21,7 +21,9 @@
   end
   def update
     if @assignment.update(assignment_params)
-      redirect_to @assignment, notice: "Assignment was successfully updated!"
+      @lesson_id = @assignment.lesson_id
+      @topic_id = @assignment.topic_id
+      redirect_to topic_lesson_assignment_path(lesson_id: @lesson_id, topic_id: @topic_id, id: @assignment.id), notice: "Assignment was successfully updated!"
     else
       render :edit
     end

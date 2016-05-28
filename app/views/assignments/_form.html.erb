@@ -1,5 +1,5 @@
 <div style = "text-align:center">
-	<%= form_for(:assignment, url: topic_lesson_assignments_path) do |f| %>
+	<%= form_for(@assignment, url: topic_lesson_assignment_path(@assignment), assignment_id: @assignment.id) do |f| %>
 	<%= f.label "Title" %>
 	<br />
 	<%= f.text_field :title, maxlength: 34, class: "form-control", style: "width:80%;margin:0 auto" %>

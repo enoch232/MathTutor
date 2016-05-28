@@ -19,7 +19,7 @@ class TopicsController < ApplicationController
   end
   def update
     if @topic.update(topic_params)
-      redirect_to @topic, notice: "Topic was updated successfully"
+      redirect_to @topic, notice: "Topic was updated successfully!"
     else
       render :edit
     end

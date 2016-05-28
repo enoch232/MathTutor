@@ -22,7 +22,7 @@ class AnnouncementsController < ApplicationController
   end
   def update
     if @announcement.update(announcement_params)
-      redirect_to @announcement
+      redirect_to @announcement, notice: "Announcement was updated successfully!"
     else
       render :edit
     end
