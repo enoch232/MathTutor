@@ -1,7 +1,10 @@
 <div class = "announcement-show">
 	<div class = "announcement-title">
 		<%= @announcement.title %>
+		<% if current_user.email == "k5m1nster@gmail.com" %>
 		<%= link_to "Edit announcement", edit_announcement_path(@announcement), class: "btn btn-default" %>
+		<%= link_to "Delete", @announcement, method: :delete, class: "btn btn-danger" %>
+		<% end %>
 	</div>
 	<div class = "announcement-time">
 		Posted <%= time_ago_in_words(@announcement.created_at) %> ago.
