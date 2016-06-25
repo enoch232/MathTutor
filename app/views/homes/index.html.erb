@@ -63,7 +63,7 @@
 					<% @assignments.each do |assignment| %>
 					<%= link_to topic_lesson_assignment_path(topic_id: assignment.topic_id, lesson_id: assignment.lesson_id, id: assignment.id) do %>
 					<div class = "assignment">
-						<span class = "assignment-title"><%= assignment.title.capitalize %></span>
+						<span class = "assignment-title"><%= truncate(assignment.title.capitalize, length: 29) %></span>
 						<br />
 						<span class = "assignment-description"><%= assignment.description.capitalize %></span>
 						<br />
