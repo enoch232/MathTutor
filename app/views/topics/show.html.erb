@@ -1,12 +1,12 @@
 <% @adminemail = "k5m1nster@gmail.com" %>
 <div>
-	<div class = "topic-show-container">
+	<div class = "topic-show-container hidden-class">
 		<div class = "topic-show-title">
 			<%= @topic.title.capitalize %>
 			<%= link_to "Edit Topic", edit_topic_path(@topic), class: "btn btn-default" %>
 		</div>
 		<div class = "topic-show-lesson-assignment-container">
-			<div class = "topic-show-lesson-container">
+			<div class = "topic-show-lesson-container hidden-class">
 				<div class = "topic-show-lesson-container-title titles">
 					Lessons
 				</div>
@@ -23,7 +23,7 @@
 					<% end %>
 				</div>
 			</div>
-			<div class = "topic-show-assignment-container">
+			<div class = "topic-show-assignment-container hidden-class">
 				<div class = "topic-show-assignment-container-title titles">
 					Assignments
 				</div>
@@ -39,4 +39,17 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		setTimeout(function(){
+			$(".topic-show-container").removeClass("hidden-class").addClass("a-fast fadeIn");
+			setTimeout(function(){
+			$(".topic-show-lesson-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
+			},500);
+			setTimeout(function(){
+				$(".topic-show-assignment-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
+			},700);
+		},100);
+		
+
+	</script>
 </div>

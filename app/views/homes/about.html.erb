@@ -1,5 +1,5 @@
 <div>
-	<div class = "about-container">
+	<div class = "about-container hidden-class">
 		<div class = "about-title">
 			ABOUT
 		</div>
@@ -8,3 +8,8 @@
 		</div>
 	</div>
 </div>
+<script>
+	setTimeout(function(){
+		$(".about-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
+	},100);
+</script>
