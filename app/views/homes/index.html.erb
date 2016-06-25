@@ -1,7 +1,7 @@
 
 <% @adminemail = "k5m1nster@gmail.com" %>
 <div class = "home-index-container">
-	<div class = "home-introduction">
+	<div class = "home-introduction a-fast fadeInRight">
 		<div class = "welcome-message" style = "margin-bottom:1rem">
 			Wecome <%= current_user.name %>
 		</div>
@@ -9,8 +9,20 @@
 			You have 0 notification
 		</div>
 	</div>
+	<script>
+	setTimeout(function(){
+		$(".topic-list").removeClass("hidden-class").addClass("a-fast fadeInRight");
+	},500);
+	setTimeout(function(){
+		$(".announcement-list").removeClass("hidden-class").addClass("a-fast fadeInRight");
+	},700);
+	setTimeout(function(){
+		$(".assignment-list").removeClass("hidden-class").addClass("a-fast fadeInRight");
+	},900);
+
+	</script>
 	<div class = "list-container">
-		<div class = "topic-list">
+		<div class = "topic-list hidden-class">
 			<div class = "index-titles">
 				Topics
 				<% if current_user.email == @adminemail %>
@@ -33,7 +45,7 @@
 				<% end %>
 			</div>
 		</div>
-		<div class = "announcement-list">
+		<div class = "announcement-list hidden-class">
 			<div class = "index-titles">
 				<%= link_to "Announcements", announcements_path %>
 				<% if current_user.email == @adminemail %>
@@ -54,7 +66,7 @@
 				<% end %>
 			</div>
 		</div>
-		<div class = "assignment-list">
+		<div class = "assignment-list hidden-class">
 			<div class = "index-titles">
 				Assignments
 			</div>
