@@ -1,14 +1,14 @@
 <div>
-	<div class = "assignment-show-page">
+	<div class = "assignment-show-page hidden-class">
 		<div class = "assignment-show-page-title"><%= @assignment.title %></div>
 		<div class = "assignment-show-page-description"><%= @assignment.description.html_safe %></div>
 		<div class = "assignment-show-page-duedate">Due: <%= @assignment.duedate %></div>
 		<% if current_user.email == "k5m1nster@gmail.com" %>
 		<%= link_to topic_lesson_assignment_path(@assignment), method: :delete, data: {confirm: "Are you sure?"} do %>
-			<div class = "assignment-show-page-delete">Delete</div>
+		<div class = "assignment-show-page-delete">Delete</div>
 		<% end %>
 		<%= link_to edit_topic_lesson_assignment_path(@assignment) do %>
-			<div class = "assignment-show-page-edit">Edit</div>
+		<div class = "assignment-show-page-edit">Edit</div>
 		<% end %>
 		<% end %>
 	</div>
@@ -16,3 +16,11 @@
 		<%= link_to "Back", :back, class: "btn btn-default" %>
 	</div>
 </div>
+<script>
+setTimeout(function(){
+	$(".assignment-show-page").removeClass("hidden-class")
+	$(".assignment-show-page").addClass("a-fast fadeInRight");
+},100);
+
+
+</script>
