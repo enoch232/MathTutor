@@ -26,7 +26,6 @@ class TopicsController < ApplicationController
   end
   def show
   end
-
   def destroy
     @topic.destroy
     redirect_to root_path

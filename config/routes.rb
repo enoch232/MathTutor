@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'admins/index'
+
   mathjax 'mathjax'
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -14,6 +16,7 @@ Rails.application.routes.draw do
   devise_scope :user do get "/sign_up" => "devise/registrations#new" end
   get '/about' => 'homes#about'
   get '/contact' => 'homes#contact'
+  get '/admin' => 'admin#index'
   mount ActionCable.server => '/cable'
 
 end
