@@ -1,6 +1,6 @@
 <% @adminemail = "k5m1nster@gmail.com" %>
 <div style = "text-align:center">
-	<div class = "lesson-show-container">
+	<div class = "lesson-show-container hidden-class">
 		<div style = "text-align:center">
 			<div class = "lesson-show-title">
 				<%= @lesson.title.capitalize %>
@@ -29,10 +29,9 @@
 	</div>
 </div>
 <script>
-	setTimeout(function(){
-		$(".lesson-show-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
-		
-	},100);
-		
-
+	if ($(".lesson-show-container").hasClass("hidden-class")){
+		setTimeout(function(){
+			$(".lesson-show-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
+		},100);	
+	}
 </script>

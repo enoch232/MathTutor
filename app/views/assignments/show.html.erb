@@ -17,10 +17,13 @@
 	</div>
 </div>
 <script>
-setTimeout(function(){
-	$(".assignment-show-page").removeClass("hidden-class")
-	$(".assignment-show-page").addClass("a-fast fadeInRight");
-},100);
+if ($(".assignment-show-page").hasClass("hidden-class")){
+	setTimeout(function(){
+		$(".assignment-show-page").removeClass("hidden-class")
+		$(".assignment-show-page").addClass("a-fast fadeInRight");
+	},100);
+}
+
 
 
 </script>

@@ -40,16 +40,16 @@
 		</div>
 	</div>
 	<script>
-		setTimeout(function(){
-			$(".topic-show-container").removeClass("hidden-class").addClass("a-fast fadeIn");
+		if($(".topic-show-container").hasClass("hidden-class")){
 			setTimeout(function(){
-			$(".topic-show-lesson-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
-			},500);
-			setTimeout(function(){
-				$(".topic-show-assignment-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
-			},700);
-		},100);
-		
-
+				$(".topic-show-container").removeClass("hidden-class").addClass("a-fast fadeIn");
+				setTimeout(function(){
+				$(".topic-show-lesson-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
+				},300);
+				setTimeout(function(){
+					$(".topic-show-assignment-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
+				},500);
+			},100);	
+		}
 	</script>
 </div>

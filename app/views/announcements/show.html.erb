@@ -6,10 +6,10 @@
 		<%= link_to "Delete", @announcement, method: :delete, class: "btn btn-danger" %>
 		<% end %>
 	</div>
-	<div class = "announcement-time">
+	<div class = "announcement-time hidden-class">
 		Posted <%= time_ago_in_words(@announcement.created_at) %> ago.
 	</div>
-	<div class = "announcement-description">
+	<div class = "announcement-description hidden-class">
 		<%= @announcement.description.html_safe %>
 	</div>
 </div>
@@ -18,5 +18,11 @@
 		setTimeout(function(){
 			$(".announcement-show").removeClass("hidden-class").addClass("a-fast fadeInRight");
 		},100);
+		setTimeout(function(){
+			$(".announcement-title").removeClass("hidden-class").addClass("a-fast fadeIn");
+		},500);
+		setTimeout(function(){
+			$(".announcement-description,.announcement-time").removeClass("hidden-class").addClass("a-fast fadeIn");
+		},600);
 	}
 </script>
