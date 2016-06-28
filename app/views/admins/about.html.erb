@@ -1,0 +1,24 @@
+<% if current_user.email == "k5m1nster@gmail.com" %>
+<div>
+	<div class = "new-lesson-title">
+		<h1>About Me</h1>
+	</div>
+	<div>
+		<%= form_for(:admin) do |f| %>
+		<%= f.text_area :aboutme %>
+		<%= f.submit%>
+		<% end %>
+	</div>
+</div>
+<% else %>
+<div>
+	<div class = "no-access">
+		<div class = "no-access-title">
+			FATAL ERROR!
+		</div>
+		<div class = "no-access-description">
+			You do not have an access to this page.
+		</div>
+	</div>
+</div>
+<% end %>

@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   get '/about' => 'homes#about'
   get '/contact' => 'homes#contact'
   get '/admin' => 'admin#index'
+  get '/about/edit' => 'admin#aboutme'
+  get '/contact/edit' => 'admin#contactme'
   mount ActionCable.server => '/cable'
 
 end
