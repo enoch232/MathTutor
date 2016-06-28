@@ -9,7 +9,9 @@
 	</div>
 </div>
 <script>
-	setTimeout(function(){
-		$(".about-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
-	},100);
+	if ($(".about-container").hasClass("hidden-class")){
+		setTimeout(function(){
+			$(".about-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
+		},100);	
+	}
 </script>

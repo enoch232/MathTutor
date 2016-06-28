@@ -1,5 +1,5 @@
-<div class = "announcement-show">
-	<div class = "announcement-title">
+<div class = "announcement-show hidden-class">
+	<div class = "announcement-title hidden-class">
 		<%= @announcement.title %>
 		<% if current_user.email == "k5m1nster@gmail.com" %>
 		<%= link_to "Edit announcement", edit_announcement_path(@announcement), class: "btn btn-default" %>
@@ -13,3 +13,10 @@
 		<%= @announcement.description.html_safe %>
 	</div>
 </div>
+<script>
+	if ($(".announcement-show").hasClass("hidden-class")){
+		setTimeout(function(){
+			$(".announcement-show").removeClass("hidden-class").addClass("a-fast fadeInRight");
+		},100);
+	}
+</script>

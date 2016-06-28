@@ -9,18 +9,7 @@
 			You have 0 notification
 		</div>
 	</div>
-	<script>
-	setTimeout(function(){
-		$(".topic-list").removeClass("hidden-class").addClass("a-fast fadeInRight");
-	},500);
-	setTimeout(function(){
-		$(".announcement-list").removeClass("hidden-class").addClass("a-fast fadeInRight");
-	},700);
-	setTimeout(function(){
-		$(".assignment-list").removeClass("hidden-class").addClass("a-fast fadeInRight");
-	},900);
-
-	</script>
+	
 	<div class = "list-container">
 		<div class = "topic-list hidden-class">
 			<div class = "index-titles">
@@ -94,3 +83,16 @@
 	<div class = "review-list">
 	</div>
 </div>
+<script>
+	if($(".topic-list").hasClass("hidden-class")){
+		setTimeout(function(){
+			$(".topic-list").removeClass("hidden-class").addClass("a-fast fadeInRight");
+		},500);
+		setTimeout(function(){
+			$(".announcement-list").removeClass("hidden-class").addClass("a-fast fadeInRight");
+		},700);
+		setTimeout(function(){
+			$(".assignment-list").removeClass("hidden-class").addClass("a-fast fadeInRight");
+		},900);	
+	}
+</script>
