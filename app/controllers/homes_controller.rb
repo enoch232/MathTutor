@@ -5,4 +5,7 @@ class HomesController < ApplicationController
 	  @topics = Topic.all
 	  @announcements = Announcement.all.order("announcements.updated_at desc").limit(5)
 	end
+	def about
+	  @about = About.first
+	end
 end
