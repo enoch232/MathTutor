@@ -2,14 +2,14 @@
 <div style = "text-align:center">
 	<div class = "lesson-show-container hidden-class">
 		<div style = "text-align:center">
-			<div class = "lesson-show-title">
+			<div class = "lesson-show-title hidden-class">
 				<%= @lesson.title.capitalize %>
 				<%= link_to "Edit Lesson", edit_topic_lesson_path(@lesson), class: "btn btn-default" %>
 			</div>
-			<div class = "lesson-show-description">
+			<div class = "lesson-show-description hidden-class">
 				<%= @lesson.description.capitalize.html_safe %>
 			</div>
-			<div class = "lesson-assignment">
+			<div class = "lesson-assignment hidden-class">
 				<div style = "text-align:center">
 					<h3>Assignments</h3>
 				</div>
@@ -33,5 +33,14 @@
 		setTimeout(function(){
 			$(".lesson-show-container").removeClass("hidden-class").addClass("a-fast fadeInRight");
 		},100);	
+		setTimeout(function(){
+			$(".lesson-show-title").removeClass("hidden-class").addClass("a-fast fadeIn");
+		},600);	
+		setTimeout(function(){
+			$(".lesson-show-description").removeClass("hidden-class").addClass("a-fast fadeIn");
+		},900);	
+		setTimeout(function(){
+			$(".lesson-assignment").removeClass("hidden-class").addClass("a-fast fadeIn");
+		},900);
 	}
 </script>

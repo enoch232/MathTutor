@@ -4,7 +4,9 @@
 			ABOUT
 		</div>
 		<div class = "about-description">
+			<% if @about %>
 			<%= @about.description.html_safe %>
+			<% end %>
 		</div>
 	</div>
 </div>

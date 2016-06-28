@@ -3,11 +3,6 @@ class AdminsController < ApplicationController
   end
   def about
   	@admin = About.all
-  	if @admin.count < 1
-  		@admin = About.new(description: "None")
-  	else
-  		@admin = @admin.first
-  	end
   end
   def about_new
     @admin = About.all
